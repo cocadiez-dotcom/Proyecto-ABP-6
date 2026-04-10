@@ -1,0 +1,96 @@
+/* variables de color */
+
+:root {
+    --morado1: #1F0D36;
+    --morado2: #402563;
+    --beige: #E6E2D8;
+    --white: #FFFFFF;
+     --naranja: #EF7E16;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body {
+    font-family: "Ubuntu Sans", sans-serif;
+    background-color: var(--morado1);
+}
+
+.hero {
+   
+    background-image: url(../assets/images/hero.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-position: top;
+	height: 20.1vh;
+    background-repeat: no-repeat;
+
+    
+}
+.navbar {
+display: flex list-item;
+margin: auto;
+color:#FFFFFF;
+height: 50px;
+padding-top: 3vh;
+text-align: right;
+
+
+}
+.h1 {
+color: #FFF;
+text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+font-variant: small-caps;
+}
+
+.h2 {
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+}
+
+.button {
+    background-color: var(--naranja);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cards {
+    background: #666666;
+   
+    row-gap: 12px;
+    column-gap: 12px;
+    grid-template-rows: repeat(2,fit-content(100%));
+grid-template-columns: repeat(3,minmax(0,1fr));
+
+}
+
+.experiencia {
+    background: var(--beige);
+    row-gap: 12px;
+    column-gap: 12px;
+    grid-template-rows: repeat(2,fit-content(100%));
+grid-template-columns: repeat(3,minmax(0,1fr));
+
+}
+
+.contacto {
+    background: var(--morado2);
+    row-gap: 60px;
+    column-gap: 50px;
+    grid-template-rows: repeat(2,fit-content(100%));
+grid-template-columns: repeat(3,minmax(0,1fr));
+
+}
