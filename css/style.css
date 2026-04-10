@@ -20,12 +20,22 @@
 
 .hero {
     background-image: url(../assets/images/hero.jpg);
-    background-size: 100%;
-    background-position: center;background-position: top;background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;background-position: top;
+    height: 21vh;
+    
+    background-repeat: no-repeat;
     padding-left: 30px;   
 }
+
+.hero-content {
+   max-height: fit-content;
+     margin: 100px auto 0 auto;
+     text-align: right;
+}   
 .navbar {
 display: flex;
+
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
@@ -38,13 +48,12 @@ list-style: none;
 gap: 20px;
 
 }
-
 .nav-links a {
-color: var(--naranja);
+color: var(--white);
 text-decoration: none;
 }
 .nav-links a:hover {
-color: var(--naranja);
+color: var(--morado2);
 }
 
 .h1 {
@@ -66,19 +75,13 @@ color: var(--naranja);
     line-height: normal;
     font-variant: small-caps;
 }
-
-.button {
-    background-color: var(--naranja);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
 .cards {
-background: #666666;
-padding-left: 30px;
+
+padding-left: 8px;
+padding-right: 8px;
+display: flex;
+list-style: none;
+gap: 8px;
 }
 .experiencia {
 background: var(--beige);
@@ -99,4 +102,11 @@ padding-left: 30px;
     border-radius: 5px;
     padding: 16px;
     margin-bottom: 20px;
+    color: var(--white);
+}
+.fotocard {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: var(--white);
 }
