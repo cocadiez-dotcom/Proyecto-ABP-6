@@ -3,9 +3,11 @@
 :root {
     --morado1: #1F0D36;
     --morado2: #402563;
+    --gris: #949495;
     --beige: #E6E2D8;
     --white: #FFFFFF;
     --naranja: #EF7E16;
+    --naranja-oscuro: #B8600E;
 }
 
 * {
@@ -24,7 +26,7 @@
     background-size: cover;
     background-position: center;
     background-position: top;
-    height: 30vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
 }
@@ -33,14 +35,18 @@
     margin-top: 5%;
     background-color: rgba(64, 37, 99, 0.7);
     padding-left: 16px;
-    padding-top: 20px;
+    padding-top: 16px;
+   display: inline-block;
+   position: relative;
+    z-index: 2;
+
 
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: right;
+   justify-content: flex-end;
     padding-right: 16px;
 }
 
@@ -83,68 +89,177 @@
 }
 
 .cards {
+    margin-top: 8px;
     padding-left: 8px;
     padding-right: 8px;
     display: flex;
     list-style: none;
     gap: 8px;
+    flex-direction: row;
+    align-items: flex-start;
+
 }
 
-
-
 .card {
-   
-    max-width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
+
     gap: 8px;
     background-color: var(--morado2);
     border-radius: 5px;
     padding: 8px;
     margin-bottom: 10px;
     color: var(--white);
-    max-height: fit-content;
+    height: 300px;
+    flex:1;
+
 
 }
 
-.card p  {
-    font-size: 13px;
+.card h5 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card p {
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.5;
     padding-top: 10px;
-   
+
 }
 
+
 .fotocard {
-    width: 100%;
-    height: 100px;
+    min-height: fit-content;
     border-radius: 5px;
     background-color: var(--white);
     margin-bottom: 16px;
+height: 140px;
+    overflow: hidden;
 
-    
 }
+
 .fotocard img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+     height: 140px;
+    overflow: hidden;
 }
+
+
 .experiencia {
+    display:flex;
+     flex-direction: column;
+     
     background: var(--beige);
-    padding: 30px;
+    padding-top: 24px;
+    padding-left: 48px;
     color: var(--morado1);
+    padding-right: 24px;
+    padding-bottom: 24px;
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    gap: 40px;
+    
+    
+
 }
+
+.cada_experiencia {
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: var(--gris);
+    padding-left: 16px;
+    margin-bottom: 16px;
+
+}
+
+h5 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 16px;
+}
+
 .experiencia p {
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.2;
-} 
+    line-height: 1.5;
+    padding-top: 8px;
+}
 
-.contacto {
-    background: var(--morado2);
-    padding-left: 30px;
-    color: #FFFFFF;
+
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background: #3b1b5c;
+    color: white;
+}
+
+.contact-left {
+    width: 40%;
+}
+
+.contact-left h2 {
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.phone,
+.location {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* FORM */
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    background: #f57c00;
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.contact-form button:hover {
+    background: #B8600E;
 }
