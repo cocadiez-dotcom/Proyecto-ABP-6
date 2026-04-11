@@ -37,8 +37,6 @@
     padding-left: 16px;
     padding-top: 16px;
    display: inline-block;
-   position: relative;
-    z-index: 2;
 
 
 }
@@ -152,9 +150,6 @@ height: 140px;
 
 
 .experiencia {
-    display:flex;
-     flex-direction: column;
-     
     background: var(--beige);
     padding-top: 24px;
     padding-left: 48px;
@@ -163,9 +158,7 @@ height: 140px;
     padding-bottom: 24px;
      display: grid;
     grid-template-columns: repeat(3, 1fr);
-   
     gap: 40px;
-    
     
 
 }
