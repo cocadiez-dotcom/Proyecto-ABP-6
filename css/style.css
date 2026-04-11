@@ -35,20 +35,13 @@
 .hero-overlay {
 
     position: absolute;
-
     top: 50%;
     left: 0%;
     right: 0%;
-    /* 👈 en vez de px fijos */
-
     transform: translateY(-30%);
-
-    width: auto%;
-
+    width: auto;
     background: rgba(64, 37, 99, 0.7);
-
     padding: 10px 28px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +58,6 @@
     font-size: 14px;
 }
 
-
 .navbar {
     position: absolute;
     top: 0;
@@ -76,7 +68,6 @@
     /* 👈 clave */
     padding: 24px 48px;
     z-index: 2;
-    /* 👈 sobre overlay */
 }
 
 .top-bar {
@@ -85,27 +76,18 @@
     align-items: center;
 }
 
-.nav-links {
-    display: flex;
-    gap: 24px;
-
-    .nav-links {
+ .nav-links {
         display: flex;
         gap: 16px;
         flex-wrap: wrap;
-        /* 👈 clave */
-
+        font-weight: 700;
+        text-decoration: none;
+        list-style: none;
     }
-
-    list-style: none;
-
-}
 
 .nav-links a {
     color: var(--white);
-    font-weight: 700;
-    text-decoration: none;
-
+   
 }
 
 .nav-links a:hover {
@@ -131,11 +113,10 @@
     font-weight: 400;
     line-height: normal;
     font-variant: small-caps;
-
     color: var(--beige);
 }
 
-
+/* sección Cards*/
 .cards {
     margin-top: 8px;
     padding-left: 8px;
@@ -143,10 +124,8 @@
     display: flex;
     list-style: none;
     gap: 8px;
-    flex-direction:column;
+    flex-direction: column;
     align-items: stretch;
-    
-
 }
 
 .card {
@@ -158,8 +137,6 @@
     margin: 10px;
     color: var(--white);
     flex: 1;
-
-
 }
 
 .card h5 {
@@ -175,7 +152,6 @@
     font-weight: 400;
     line-height: 1.5;
     padding-top: 10px;
-
 }
 
 
@@ -186,7 +162,8 @@
     margin-bottom: 16px;
     height: 140px;
     overflow: hidden;
-
+    aspect-ratio: 16 / 9; /* 👈 mantiene proporción */
+    width: 100%;
 }
 
 .fotocard img {
@@ -194,10 +171,9 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-
 }
 
-
+/* sección experiencia*/
 .experiencia {
     background: var(--beige);
     padding: 24px 24px 24px 48px;
@@ -205,8 +181,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-
-
 }
 
 .cada_experiencia {
@@ -232,7 +206,7 @@ h5 {
     padding-top: 8px;
 }
 
-
+/* sección contacto*/
 
 .contact {
     display: flex;
@@ -268,50 +242,35 @@ h5 {
     font-size: 14px;
 }
 
-/* FORM */
-.contact-form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
+/*form*/
+.btn-dark {
+    background: var(--naranja);
     border: none;
-    border-radius: 4px;
 }
 
-.contact-form textarea {
-    height: 120px;
+.btn-dark:hover {
+    opacity: 0.9;
+    background-color: var(--naranja-oscuro);
 }
 
-.contact-form button {
-    background: #f57c00;
-    color: white;
-    border: none;
-    padding: 14px;
-    cursor: pointer;
-    font-size: 16px;
-
-}
-
-.contact-form button:hover {
-    background: #B8600E;
+.form-control:focus {
+    border-color: var(--morado2);
+    box-shadow: 0 0 0 0.2rem rgba(64, 37, 99, 0.2);
 }
 
 /*Optimización para pantallas tablet*/
-@media(min-width: 834px){
+@media(min-width: 768px) {
     .cards {
         flex-direction: row;
     }
-    
+
 }
+
 /*Optimización para pantallas desktop*/
-@media(min-width: 1440px){
+@media(min-width: 1440px) {
     .cards {
         flex-direction: row;
     }
-    
+
 }
