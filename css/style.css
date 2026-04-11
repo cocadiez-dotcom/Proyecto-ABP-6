@@ -1,5 +1,4 @@
 /* variables de color */
-
 :root {
     --morado1: #1F0D36;
     --morado2: #402563;
@@ -16,32 +15,31 @@
     padding: 0;
 }
 
-.body {
+body {
     margin: 0;
     font-family: "Ubuntu Sans", sans-serif;
     background-color: var(--morado1);
     overflow-x: hidden;
 }
 
+/* ========== MOBILE FIRST (estilos base para móvil) ========== */
+
 .hero {
     position: relative;
     background-image: url("../assets/images/hero.jpg");
     background-size: cover;
     background-position: center;
-    height: 300px;
-
+    height: 250px;
 }
 
 .hero-overlay {
-
     position: absolute;
     top: 50%;
-    left: 0%;
-    right: 0%;
+    left: 0;
+    right: 0;
     transform: translateY(-30%);
-    width: auto;
     background: rgba(64, 37, 99, 0.7);
-    padding: 10px 28px;
+    padding: 15px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,12 +48,13 @@
 .hero-overlay h1 {
     margin: 0;
     color: white;
+    font-size: 20px;
 }
 
 .hero-overlay p {
     margin: 0;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .navbar {
@@ -65,8 +64,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    /* 👈 clave */
-    padding: 24px 48px;
+    padding: 15px 20px;
     z-index: 2;
 }
 
@@ -76,93 +74,81 @@
     align-items: center;
 }
 
- .nav-links {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        font-weight: 700;
-        text-decoration: none;
-        list-style: none;
-    }
+.nav-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .nav-links a {
     color: var(--white);
-   
+    text-decoration: none;
+    font-size: 12px;
 }
 
 .nav-links a:hover {
     color: var(--morado2);
 }
 
-.h1 {
-    color: #FFF;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    font-variant: small-caps;
-    margin: 0px;
-}
-
-.h2 {
+h1 {
     color: #FFF;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     font-style: normal;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+h2 {
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     font-variant: small-caps;
     color: var(--beige);
+    margin: 5px 0 0 0;
 }
 
-/* sección Cards*/
-.cards {
-    margin-top: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    display: flex;
-    list-style: none;
-    gap: 8px;
-    flex-direction: column;
-    align-items: stretch;
+/* Cards - Mobile First (1 columna) */
+.cards-section {
+    padding: 20px 15px;
 }
 
-.card {
-
-    gap: 8px;
+.custom-card {
     background-color: var(--morado2);
-    border-radius: 5px;
-    padding: 8px;
-    margin: 10px;
+    border-radius: 8px;
+    padding: 12px;
     color: var(--white);
-    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
 }
 
-.card h5 {
-    font-size: 18px;
-    font-style: normal;
+.custom-card h5 {
+    font-size: 16px;
     font-weight: 700;
-    line-height: normal;
+    margin: 10px 0 0 0;
 }
 
-.card p {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
+.custom-card p {
+    font-size: 13px;
     line-height: 1.5;
-    padding-top: 10px;
+    margin: 8px 0 0 0;
+    flex-grow: 1;
 }
-
 
 .fotocard {
-    min-height: fit-content;
     border-radius: 5px;
     background-color: var(--white);
-    margin-bottom: 16px;
-    height: 140px;
     overflow: hidden;
-    aspect-ratio: 16 / 9; /* 👈 mantiene proporción */
+    aspect-ratio: 16 / 9;
     width: 100%;
 }
 
@@ -170,70 +156,74 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top; 
     border-radius: 5px;
 }
 
-/* sección experiencia*/
+/* Experiencia - Mobile First */
 .experiencia {
     background: var(--beige);
-    padding: 24px 24px 24px 48px;
+    padding: 30px 20px;
     color: var(--morado1);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
 }
 
 .cada_experiencia {
     border-left: 3px solid var(--gris);
-    padding-left: 16px;
-
-
+    padding-left: 15px;
+    margin-bottom: 25px;
 }
 
-h5 {
-    font-size: 18px;
-    font-style: normal;
+.cada_experiencia:last-child {
+    margin-bottom: 0;
+}
+
+.cada_experiencia h5 {
+    font-size: 16px;
     font-weight: 700;
-    line-height: normal;
-    padding-top: 16px;
+    margin: 0 0 8px 0;
 }
 
 .experiencia p {
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5;
-    padding-top: 8px;
+    margin: 0;
 }
 
-/* sección contacto*/
-
+/* Contacto - Mobile First */
 .contact {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px;
+    padding: 30px 20px;
     background: #3b1b5c;
     color: white;
 }
 
 .contact-left {
-    width: 40%;
+    margin-bottom: 30px;
 }
 
 .contact-left h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-left h4 {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 .profile {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 15px;
     margin: 20px 0;
 }
 
 .profile img {
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .phone,
@@ -242,11 +232,16 @@ h5 {
     font-size: 14px;
 }
 
+/* Formulario - Mobile First */
+.form-container {
+    padding: 0;
+}
 
-/*form*/
 .btn-dark {
     background: var(--naranja);
     border: none;
+    padding: 12px;
+    font-size: 16px;
 }
 
 .btn-dark:hover {
@@ -259,18 +254,138 @@ h5 {
     box-shadow: 0 0 0 0.2rem rgba(64, 37, 99, 0.2);
 }
 
-/*Optimización para pantallas tablet*/
-@media(min-width: 768px) {
-    .cards {
-        flex-direction: row;
+/* ========== TABLET (768px en adelante) ========== */
+@media (min-width: 768px) {
+    .hero {
+        height: 300px;
     }
-
+    
+    .hero-overlay {
+        padding: 20px 40px;
+    }
+    
+    .hero-overlay h1 {
+        font-size: 26px;
+    }
+    
+    .hero-overlay p {
+        font-size: 14px;
+    }
+    
+    .navbar {
+        padding: 24px 48px;
+    }
+    
+    .nav-links {
+        gap: 16px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    /* Cards - Tablet: 3 columnas */
+    .cards-section {
+        padding: 30px 20px;
+    }
+    
+    .custom-card {
+        margin-bottom: 0;
+    }
+    
+    .custom-card h5 {
+        font-size: 18px;
+    }
+    
+    .custom-card p {
+        font-size: 14px;
+    }
+    
+    /* Experiencia - Tablet: 2 columnas */
+    .experiencia {
+        padding: 40px 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .cada_experiencia {
+        margin-bottom: 0;
+    }
+    
+    /* Contacto - Tablet */
+    .contact {
+        padding: 40px 30px;
+        display: flex;
+        gap: 40px;
+    }
+    
+    .contact-left {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .form-container {
+        flex: 1;
+    }
+    
+    .profile {
+        flex-direction: row;
+        text-align: left;
+        gap: 20px;
+    }
 }
 
-/*Optimización para pantallas desktop*/
-@media(min-width: 1440px) {
-    .cards {
-        flex-direction: row;
+/* ========== DESKTOP (1024px en adelante) ========== */
+@media (min-width: 1024px) {
+    .cards-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
     }
+    
+    /* Experiencia - Desktop: 3 columnas */
+    .experiencia {
+        padding: 60px 40px;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .contact {
+        padding: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .custom-card {
+        transition: transform 0.3s ease;
+    }
+    
+    .custom-card:hover {
+        transform: translateY(-5px);
+    }
+}
 
+/* ========== DESKTOP GRANDE (1440px en adelante) ========== */
+@media (min-width: 1440px) {
+    .cards-section {
+        max-width: 1400px;
+    }
+    
+    .custom-card h5 {
+        font-size: 20px;
+    }
+    
+    .custom-card p {
+        font-size: 16px;
+    }
 }
