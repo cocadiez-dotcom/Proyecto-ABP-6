@@ -74,8 +74,69 @@ body {
     align-items: center;
 }
 
+/* ========== MENÚ HAMBURGUESA ========== */
+
+/* Botón menú hamburguesa - solo visible en móvil */
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.menu-btn img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+/* Menú flotante - oculto por defecto */
+.menu-flotante {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: var(--morado2);
+    border-radius: 12px;
+    padding: 16px 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
+    min-width: 180px;
+}
+
+.menu-flotante.active {
+    display: block;
+}
+
+.menu-flotante ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-flotante ul li {
+    margin: 12px 0;
+}
+
+.menu-flotante ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding: 8px 0;
+    white-space: nowrap;
+}
+
+.menu-flotante ul li a:hover {
+    color: var(--naranja);
+}
+
+/* Links normales - visibles solo en tablet/desktop */
 .nav-links {
-    display: flex;
+    display: none;
     gap: 12px;
     flex-wrap: wrap;
     font-weight: 700;
@@ -160,7 +221,8 @@ h2 {
     border-radius: 5px;
 }
 
-/* Experiencia - Mobile First */
+/* ---> EXPERIENCIA -Mobile First <--- */
+
 .experiencia {
     background: var(--beige);
     padding: 30px 20px;
@@ -194,6 +256,7 @@ h2 {
     padding: 30px 20px;
     background: #3b1b5c;
     color: white;
+    width: 100%;
 }
 
 .contact-left {
@@ -276,12 +339,24 @@ h2 {
         padding: 24px 48px;
     }
     
+    /* Ocultar botón hamburguesa en tablet */
+    .menu-btn {
+        display: none;
+    }
+    
+    /* Mostrar links normales en tablet */
     .nav-links {
+        display: flex;
         gap: 16px;
     }
     
     .nav-links a {
-        font-size: 14px;
+        font-size: 16px;
+    }
+    
+    /* Ocultar menú flotante en tablet */
+    .menu-flotante {
+        display: none !important;
     }
     
     h1 {
@@ -346,6 +421,9 @@ h2 {
 
 /* ========== DESKTOP (1024px en adelante) ========== */
 @media (min-width: 1024px) {
+    .nav-links a {
+        font-size: 20px;
+    }
     .cards-section {
         max-width: 1200px;
         margin: 0 auto;
@@ -356,13 +434,11 @@ h2 {
     .experiencia {
         padding: 60px 40px;
         grid-template-columns: repeat(3, 1fr);
-        max-width: 1400px;
         margin: 0 auto;
     }
     
     .contact {
         padding: 60px;
-        max-width: 1200px;
         margin: 0 auto;
     }
     
