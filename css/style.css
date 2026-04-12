@@ -28,7 +28,6 @@ body {
     position: relative;
     background-image: url("../assets/images/hero.jpg");
     background-size: cover;
-    background-position: center;
     height: 250px;
 }
 
@@ -205,7 +204,7 @@ h2 {
 }
 
 .custom-card p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
     margin: 8px 0 0 0;
     flex-grow: 1;
@@ -252,7 +251,7 @@ h2 {
 }
 
 .experiencia p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
     margin: 0;
 }
@@ -272,12 +271,13 @@ h2 {
 
 .contact-left h2 {
     font-size: 24px;
+    font-weight: 700;
     margin-bottom: 15px;
     padding-left: 24px;
 }
 
 .contact-left h3 {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 20px;
     padding-left: 24px;
 }
@@ -389,7 +389,7 @@ h2 {
     }
 
     .custom-card p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* Experiencia - Tablet: 2 columnas */
