@@ -6,7 +6,7 @@
     --beige: #E6E2D8;
     --white: #FFFFFF;
     --naranja: #EF7E16;
-    --naranja-oscuro: #B8600E;
+    --naranja-oscuro: #914A08;
 }
 
 * {
@@ -18,17 +18,21 @@
 body {
     margin: 0;
     font-family: "Ubuntu Sans", sans-serif;
-    background-color: var(--beige);
+    background-color: var(--morado1);
     overflow-x: hidden;
+    background-image: url("../assets/images/fondo-5.jpg");
+background-attachment:fixed;
+background-repeat: no-repeat;
+background-size:cover;
 }
 
 /* ========== MOBILE FIRST (estilos base para móvil) ========== */
 
 .hero {
     position: relative;
-    background-image: url("../assets/images/hero2.jpg");
-    background-size: cover;
-    height: 250px;
+       
+    height: 200px;
+   
 }
 
 .hero-overlay {
@@ -81,7 +85,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    padding: 4px;
     z-index: 1001;
 }
 
@@ -117,19 +121,18 @@ body {
 
 .menu-flotante ul li {
     margin:4px 0;
-    border-style: solid;
-    border-color: var(--);
+
     padding:8px;
         border-radius: 4px;
-        background: rgba(255, 255, 255, 0.8);
-         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        background-color: var(--morado1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .menu-flotante ul li a {
-    color: var(--morado2);
+    color: var(--white);
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 200;
     display: block;
     padding: 0px 0;
     white-space: nowrap;
@@ -189,7 +192,7 @@ h2 {
 .custom-card {
     background-color: var(--morado2);
     border-radius: 8px;
-    padding: 8px;
+    padding: 16px;
     color: var(--white);
     height: 100%;
     display: flex;
@@ -229,7 +232,7 @@ h2 {
 /* ---> EXPERIENCIA -Mobile First <--- */
 
 .experiencia {
-    background: var(--beige);
+    background-color:rgba(230, 226, 216, 0.93);
     padding: 50px 50px;
     color: var(--morado1);
 }
@@ -252,6 +255,7 @@ h2 {
 
 .experiencia p {
     font-size: 14px;
+    font-weight: 450;
     line-height: 1.5;
     margin: 0;
 }
@@ -301,6 +305,8 @@ h2 {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
     object-fit: cover;
 }
 
@@ -313,18 +319,23 @@ h2 {
 /* Formulario - Mobile First */
 .form-container {
     padding: 25px;
+    color:
 }
 
 .btn-dark {
     background: var(--naranja);
     border: none;
     padding: 12px;
-    font-size: 16px;
-}
+    font-size: 24px;
+    color:var(--morado1);
+    font-weight: 700;
+    
+} 
 
 .btn-dark:hover {
     opacity: 0.9;
     background-color: var(--naranja-oscuro);
+    color:var(--morado1);
 }
 
 .form-control:focus {
@@ -335,7 +346,7 @@ h2 {
 /* ========== TABLET (768px en adelante) ========== */
 @media (min-width: 768px) {
     .hero {
-        height: 300px;
+        height: 200px;
     }
 
     .hero-overlay {
@@ -364,6 +375,10 @@ h2 {
 
     .nav-links a {
         font-size: 16px;
+         border-style: solid;
+        border-color: rgba(230, 226, 216, 0.3);
+        border-radius: 4px;
+        padding: 8px;
     }
 
     /* Ocultar menú flotante en tablet */
@@ -389,7 +404,7 @@ h2 {
     }
 
     .custom-card p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /* Experiencia - Tablet: 2 columnas */
@@ -429,10 +444,20 @@ h2 {
 
 /* ========== DESKTOP (1024px en adelante) ========== */
 @media (min-width: 1024px) {
-    .nav-links a {
+    .nav-links {
         font-size: 20px;
-    }
+    
 
+    }
+    .nav-links a {
+        font-size: 18px;
+        border-style: solid;
+        border-color: rgba(230, 226, 216, 0.3);
+        border-radius: 4px;
+        padding: 8px;
+
+    }
+    
     .cards-section {
         max-width: 1440px;
         margin: 0 auto;
@@ -453,10 +478,11 @@ h2 {
 
     .custom-card {
         transition: transform 0.3s ease;
+        
     }
 
     .custom-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-8px);
     }
 }
 
@@ -471,6 +497,6 @@ h2 {
     }
 
     .custom-card p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
