@@ -2,11 +2,11 @@
 :root {
     --morado1: #1F0D36;
     --morado2: #402563;
-    --gris: #949495;
     --beige: #E6E2D8;
     --white: #FFFFFF;
     --naranja: #EF7E16;
     --naranja-oscuro: #914A08;
+    --lila:#AF9DDD;
 }
 
 * {
@@ -20,19 +20,18 @@ body {
     font-family: "Ubuntu Sans", sans-serif;
     background-color: var(--morado1);
     overflow-x: hidden;
-    background-image: url("../assets/images/fondo-5.jpg");
-background-attachment:fixed;
-background-repeat: no-repeat;
-background-size:cover;
+    background-image: url("../assets/images/fondo.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ========== MOBILE FIRST (estilos base para móvil) ========== */
 
 .hero {
     position: relative;
-       
     height: 200px;
-   
+
 }
 
 .hero-overlay {
@@ -100,13 +99,13 @@ background-size:cover;
     position: fixed;
     top: 130px;
     right: 20px;
-    
+
     border-radius: 4px;
     padding: 8px 8px;
-   
+
     z-index: 1000;
     display: none;
-   
+
 }
 
 .menu-flotante.active {
@@ -120,12 +119,12 @@ background-size:cover;
 }
 
 .menu-flotante ul li {
-    margin:4px 0;
+    margin: 4px 0;
 
-    padding:8px;
-        border-radius: 4px;
-        background-color: var(--morado1);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 4px;
+    background-color: var(--morado1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .menu-flotante ul li a {
@@ -166,7 +165,6 @@ background-size:cover;
 h1 {
     color: #FFF;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     font-variant: small-caps;
@@ -176,13 +174,13 @@ h1 {
 h2 {
     color: #FFF;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     font-variant: small-caps;
     color: var(--beige);
     margin: 5px 0 0 0;
 }
+
 
 /* Cards - Mobile First (1 columna) */
 .cards-section {
@@ -200,14 +198,14 @@ h2 {
     margin-bottom: 16px;
 }
 
-.custom-card h5 {
+.custom-card h4 {
     font-size: 16px;
     font-weight: 700;
     margin: 10px 0 0 0;
 }
 
 .custom-card p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
     margin: 8px 0 0 0;
     flex-grow: 1;
@@ -232,15 +230,24 @@ h2 {
 /* ---> EXPERIENCIA -Mobile First <--- */
 
 .experiencia {
-    background-color:rgba(230, 226, 216, 0.93);
+    background-color: rgba(230, 226, 216, 0.93);
     padding: 50px 50px;
     color: var(--morado1);
 }
 
+.experiencia h3 {
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-left: 300px
+}
+
 .cada_experiencia {
-    border-left: 3px solid var(--gris);
+    border-left: 3px solid var(--lila);
     padding-left: 15px;
     margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .cada_experiencia:last-child {
@@ -248,22 +255,23 @@ h2 {
 }
 
 .cada_experiencia h5 {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0 0 8px 0;
 }
 
 .experiencia p {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 450;
     line-height: 1.5;
     margin: 0;
+
 }
 
 /* Contacto - Mobile First */
 .contact {
-   padding-left: 24px;
-   padding-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     background: #3b1b5c;
     color: white;
     width: 100%;
@@ -274,7 +282,7 @@ h2 {
 }
 
 .contact-left h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 15px;
     padding-left: 24px;
@@ -289,12 +297,13 @@ h2 {
 .profile {
     display: flex;
     flex-direction: column;
-   padding-left: 24px;
-   padding-top: 24px    ;
+    padding-left: 24px;
+    padding-top: 24px;
     text-align: center;
     gap: 15px;
     margin: 20px 0;
 }
+
 .profile p {
     font-size: 20px;
     padding-right: 16px;
@@ -327,15 +336,15 @@ h2 {
     border: none;
     padding: 12px;
     font-size: 24px;
-    color:var(--morado1);
+    color: var(--morado1);
     font-weight: 700;
-    
-} 
+
+}
 
 .btn-dark:hover {
     opacity: 0.9;
     background-color: var(--naranja-oscuro);
-    color:var(--morado1);
+    color: var(--morado1);
 }
 
 .form-control:focus {
@@ -359,7 +368,7 @@ h2 {
 
     .navbar {
         padding-top: 45px;
-        padding-right:60px;
+        padding-right: 60px;
     }
 
     /* Ocultar botón hamburguesa en tablet */
@@ -375,7 +384,7 @@ h2 {
 
     .nav-links a {
         font-size: 16px;
-         border-style: solid;
+        border-style: solid;
         border-color: rgba(230, 226, 216, 0.3);
         border-radius: 4px;
         padding: 8px;
@@ -387,7 +396,7 @@ h2 {
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     /* Cards - Tablet: 3 columnas */
@@ -399,12 +408,12 @@ h2 {
         margin-bottom: 0;
     }
 
-    .custom-card h5 {
-        font-size: 18px;
+    .custom-card h4 {
+        font-size: 24px;
     }
 
     .custom-card p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     /* Experiencia - Tablet: 2 columnas */
@@ -446,9 +455,10 @@ h2 {
 @media (min-width: 1024px) {
     .nav-links {
         font-size: 20px;
-    
+
 
     }
+
     .nav-links a {
         font-size: 18px;
         border-style: solid;
@@ -457,7 +467,7 @@ h2 {
         padding: 8px;
 
     }
-    
+
     .cards-section {
         max-width: 1440px;
         margin: 0 auto;
@@ -478,7 +488,7 @@ h2 {
 
     .custom-card {
         transition: transform 0.3s ease;
-        
+
     }
 
     .custom-card:hover {
@@ -492,11 +502,11 @@ h2 {
         max-width: 1400px;
     }
 
-    .custom-card h5 {
-        font-size: 20px;
+    .custom-card h4 {
+        font-size: 24px;
     }
 
     .custom-card p {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
