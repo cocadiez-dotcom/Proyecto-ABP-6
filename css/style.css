@@ -6,7 +6,7 @@
     --white: #FFFFFF;
     --naranja: #EF7E16;
     --naranja-oscuro: #914A08;
-    --lila:#AF9DDD;
+    --lila: #AF9DDD;
 }
 
 * {
@@ -16,7 +16,6 @@
 }
 
 body {
-    margin: 0;
     font-family: "Ubuntu Sans", sans-serif;
     background-color: var(--morado1);
     overflow-x: hidden;
@@ -51,12 +50,6 @@ body {
     margin: 0;
     color: white;
     font-size: 40px;
-}
-
-.hero-overlay p {
-    margin: 0;
-    color: white;
-    font-size: 12px;
 }
 
 .navbar {
@@ -239,7 +232,7 @@ h2 {
     font-weight: 700;
     font-size: 24px;
     padding-bottom: 20px;
-    padding-left: 300px
+   
 }
 
 .cada_experiencia {
@@ -328,7 +321,6 @@ h2 {
 /* Formulario - Mobile First */
 .form-container {
     padding: 25px;
-    color:
 }
 
 .btn-dark {
