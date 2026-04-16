@@ -19,7 +19,7 @@ body {
     font-family: "Ubuntu Sans", sans-serif;
     background-color: var(--morado1);
     overflow-x: hidden;
-    background-image: url("../assets/images/fondo.webp");
+    background-image: url("../assets/images/fondo3.webp");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,7 +199,7 @@ h2 {
 }
 
 .custom-card p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     margin: 8px 0 0 0;
     flex-grow: 1;
