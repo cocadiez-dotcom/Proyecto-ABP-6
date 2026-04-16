@@ -226,6 +226,7 @@ h2 {
 .experiencia {
     background-color: rgba(230, 226, 216, 0.93);
     padding: 50px 50px;
+    margin-top: 20px;
     color: var(--morado1);
 }
 
