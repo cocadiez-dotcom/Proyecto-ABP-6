@@ -49,7 +49,7 @@ body {
 .hero-overlay h1 {
     margin: 0;
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .navbar {
@@ -123,7 +123,7 @@ body {
 .menu-flotante ul li a {
     color: var(--white);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 200;
     display: block;
     padding: 0px 0;
@@ -148,7 +148,7 @@ body {
 .nav-links a {
     color: var(--white);
     text-decoration: none;
-    font-size: 12px;
+    font: size 0.75rem;;
 }
 
 .nav-links a:hover {
@@ -171,7 +171,7 @@ h2 {
     font-weight: 400;
     font-variant: small-caps;
     color: var(--beige);
-    font-size: 30px;
+    font-size: 1.75rem;
 }
 
 
@@ -193,13 +193,13 @@ h2 {
 }
 
 .custom-card h4 {
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 10px 0 0 0;
 }
 
 .custom-card p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
     margin: 8px 0 0 0;
     flex-grow: 1;
@@ -231,7 +231,7 @@ h2 {
 
 .experiencia h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-bottom: 20px;
     color:var(--morado1)
    
@@ -250,13 +250,13 @@ h2 {
 }
 
 .cada_experiencia h5 {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 700;
     margin: 0 0 8px 0;
 }
 
 .experiencia p {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 450;
     line-height: 1.5;
     margin: 0;
@@ -283,7 +283,7 @@ h2 {
 }
 
 .contact-left h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     padding-left: 24px;
 }
@@ -295,11 +295,11 @@ h2 {
     padding-top: 24px;
     text-align: center;
     gap: 15px;
-    margin: 20px 0;
+    margin: 0;
 }
 
 .profile p {
-    font-size: 20px;
+    font-size: 1rem;
     padding-right: 16px;
     text-align: left;
 }
@@ -322,7 +322,7 @@ h2 {
     background: var(--naranja);
     border: none;
     padding: 12px;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--morado1);
     font-weight: 700;
 
@@ -368,7 +368,7 @@ h2 {
     }
 
     .nav-links a {
-        font-size: 16px;
+        font-size: 1rem;
         border-style: solid;
         border-color: rgba(230, 226, 216, 0.3);
         border-radius: 4px;
@@ -390,11 +390,11 @@ h2 {
     }
 
     .custom-card h4 {
-        font-size: 24px;
+        font-size: 1.125rem;
     }
 
     .custom-card p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     /* Experiencia - Tablet: 2 columnas */
@@ -435,13 +435,13 @@ h2 {
 /* ========== DESKTOP (1024px en adelante) ========== */
 @media (min-width: 1024px) {
     .nav-links {
-        font-size: 20px;
+        font-size: 1.375rem;
 
 
     }
 
     .nav-links a {
-        font-size: 18px;
+        font-size: 1.125rem;
         border-style: solid;
         border-color: rgba(230, 226, 216, 0.3);
         border-radius: 4px;
@@ -462,12 +462,7 @@ h2 {
         margin: 0 auto;
     }
 
-    .contact {
-        padding: 60px;
-        margin: 0 auto;
-    }
-
-    .custom-card {
+     .custom-card {
         transition: transform 0.3s ease;
 
     }
@@ -476,8 +471,14 @@ h2 {
         transform: translateY(-8px);
     }
      .custom-card p {
-        font-size: 16px;
+        font-size: 1rem;
     }
+
+    .contact {
+        padding: 60px;
+        margin: 0 auto;
+    }
+
 }
 
 /* ========== DESKTOP GRANDE (1440px en adelante) ========== */
@@ -487,10 +488,10 @@ h2 {
     }
 
     .custom-card h4 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .custom-card p {
-        font-size: 20px;
+        font-size: 1rem;
     }
 }
