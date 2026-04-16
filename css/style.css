@@ -234,8 +234,16 @@ h2 {
     font-weight: 700;
     font-size: 1.5rem;
     padding-bottom: 20px;
-    color:var(--morado1)
-   
+    color: var(--morado1);
+}
+
+.tit-experiencia h1 {
+    font-size: 1.75rem;
+    font-style: normal;
+    text-shadow: none;
+    color: var(--morado1);
+    font-variant: normal;
+    padding-bottom: 30px;
 }
 
 .cada_experiencia {
@@ -261,7 +269,6 @@ h2 {
     font-weight: 450;
     line-height: 1.5;
     margin: 0;
-
 }
 
 /* Contacto - Mobile First */
@@ -401,11 +408,15 @@ h2 {
     /* Experiencia - Tablet: 2 columnas */
     .experiencia {
         padding: 40px 100px;
+    }
+    
+    /* solo el título */
+    .experiencias-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-
+    
     .cada_experiencia {
         margin-bottom: 0;
     }
@@ -457,10 +468,12 @@ h2 {
     }
 
     /* Experiencia - Desktop: 3 columnas */
-    .experiencia {
+     .experiencia {
         padding: 60px 100px;
+    }
+    
+    .experiencias-grid {
         grid-template-columns: repeat(3, 1fr);
-        margin: 0 auto;
     }
 
      .custom-card {
