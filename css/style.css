@@ -171,8 +171,9 @@ h2 {
     font-weight: 400;
     font-variant: small-caps;
     color: var(--beige);
-    margin: 5px 0 0 0;
+    font-size: 30px;
 }
+
 
 
 /* Cards - Mobile First (1 columna) */
@@ -198,7 +199,7 @@ h2 {
 }
 
 .custom-card p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     margin: 8px 0 0 0;
     flex-grow: 1;
@@ -232,6 +233,7 @@ h2 {
     font-weight: 700;
     font-size: 24px;
     padding-bottom: 20px;
+    color:var(--morado1)
    
 }
 
@@ -275,7 +277,6 @@ h2 {
 }
 
 .contact-left h2 {
-    font-size: 30px;
     font-weight: 700;
     margin-bottom: 15px;
     padding-left: 24px;
@@ -310,12 +311,6 @@ h2 {
     border-style: solid;
     border-width: 3px;
     object-fit: cover;
-}
-
-.phone,
-.location {
-    margin-top: 10px;
-    font-size: 14px;
 }
 
 /* Formulario - Mobile First */
@@ -385,10 +380,6 @@ h2 {
         display: none !important;
     }
 
-    h2 {
-        font-size: 30px;
-    }
-
     /* Cards - Tablet: 3 columnas */
     .cards-section {
         padding: 20px 20px;
@@ -403,7 +394,7 @@ h2 {
     }
 
     .custom-card p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     /* Experiencia - Tablet: 2 columnas */
@@ -485,7 +476,7 @@ h2 {
         transform: translateY(-8px);
     }
      .custom-card p {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
