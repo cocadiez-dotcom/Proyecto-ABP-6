@@ -173,7 +173,12 @@ h2 {
     font-size: 1.75rem;
 }
 
-
+.presentacion {
+  background-color: rgba(255, 255, 255, 0.85);
+    padding: 50px 50px;
+    margin-top: 20px;
+    color: var(--morado1);
+}
 
 /* Cards - Mobile First (1 columna) */
 .cards-section {
