@@ -26,6 +26,24 @@ body {
 }
 
 /* ========== MOBILE FIRST (estilos base para móvil) ========== */
+h1 {
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+h2 {
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 400;
+    font-variant: small-caps;
+    color: var(--beige);
+    font-size: 1.75rem;
+}
 
 .hero {
     position: relative;
@@ -92,13 +110,14 @@ body {
     position: fixed;
     top: 130px;
     right: 20px;
-
     border-radius: 4px;
     padding: 8px 8px;
-
     z-index: 1000;
     display: none;
-
+    background-color: var(--morado1);
+    /* Añade fondo por si acaso */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra para que destaque */
 }
 
 .menu-flotante.active {
@@ -116,7 +135,6 @@ body {
     padding: 8px;
     border-radius: 4px;
     background-color: var(--morado1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .menu-flotante ul li a {
@@ -125,8 +143,8 @@ body {
     font-size: 1rem;
     font-weight: 200;
     display: block;
-    padding: 0px 0;
     white-space: nowrap;
+}
 }
 
 .menu-flotante ul li a:hover {
@@ -147,45 +165,60 @@ body {
 .nav-links a {
     color: var(--white);
     text-decoration: none;
-    font: size 0.75rem;;
+    font: size 0.75rem;
+    ;
 }
 
 .nav-links a:hover {
     color: var(--morado2);
 }
 
-h1 {
-    color: #FFF;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-style: normal;
-    font-weight: 700;
-    font-variant: small-caps;
-    margin: 0;
-}
-
-h2 {
-    color: #FFF;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-style: normal;
-    font-weight: 400;
-    font-variant: small-caps;
-    color: var(--beige);
-    font-size: 1.75rem;
-}
-
+/* ---> Presentación -Mobile First <--- */
 .presentacion {
-  background-color: rgba(64, 37, 99, 0.80);
+    background-color: rgba(64, 37, 99, 0.80);
     padding: 50px 65px;
     margin-top: 20px;
     color: var(--white)
 }
-.casos{
- background-color: rgba(255, 255, 255, 0.85);
+
+.presentacion h1 {
+    line-height: 1.9rem;
+    padding-bottom: 30px;
+
+}
+
+.presentacion h2 {
+    font-size: 1.5rem;
+
+}
+
+.presentacion h3 {
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.presentacion p {
+    font-size: 1rem;
+
+}
+
+/* ---> Casos -Mobile First <--- */
+.casos {
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 50px 50px;
     margin-top: 20px;
     color: var(--morado1);
 
 }
+
+.cada_caso {
+    border-left: 3px solid var(--lila);
+    padding-left: 15px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* Cards - Mobile First (1 columna) */
 .cards-section {
     padding: 10px 15px;
@@ -419,14 +452,14 @@ h2 {
     .experiencia {
         padding: 40px 100px;
     }
-    
+
     /* solo el título */
     .experiencias-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    
+
     .cada_experiencia {
         margin-bottom: 0;
     }
@@ -477,16 +510,21 @@ h2 {
         padding: 40px 20px;
     }
 
-    /* Experiencia - Desktop: 3 columnas */
-     .experiencia {
+    /* Casos - Desktop: 3 columnas */
+    .casos {
         padding: 60px 100px;
     }
-    
+
+    /* Experiencia - Desktop: 3 columnas */
+    .experiencia {
+        padding: 60px 100px;
+    }
+
     .experiencias-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-     .custom-card {
+    .custom-card {
         transition: transform 0.3s ease;
 
     }
@@ -494,7 +532,8 @@ h2 {
     .custom-card:hover {
         transform: translateY(-8px);
     }
-     .custom-card p {
+
+    .custom-card p {
         font-size: 1rem;
     }
 
