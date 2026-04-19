@@ -7,8 +7,16 @@
     --naranja: #EF7E16;
     --naranja-oscuro: #914A08;
     --lila: #AF9DDD;
+    
 }
-
+:root {
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 1rem;       /* 16px */
+    --text-base: 1.125rem; /* 18px */
+    --text-md: 1.2rem;     /* 19.2px */
+    --text-lg: 1.5rem;     /* 24px */
+    --text-xl: 1.75rem;    /* 28px */
+    --text-2xl: 2.5rem;    /* 40px */}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -42,7 +50,7 @@ h2 {
     font-weight: 400;
     font-variant: small-caps;
     color: var(--beige);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .hero {
@@ -52,24 +60,30 @@ h2 {
 }
 
 .hero-overlay {
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 0;
     right: 0;
     transform: translateY(-30%);
     background: rgba(64, 37, 99, 0.7);
-    padding: 15px 20px;
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .hero-overlay h1 {
     margin: 0;
+    margin-left: 50px;
     color: white;
     font-size: 2.5rem;
 }
-
+.hero-overlay h2 {
+   
+    margin-left: 50px;
+    
+}
 .navbar {
     position: absolute;
     top: 0;
@@ -87,6 +101,34 @@ h2 {
     align-items: center;
 }
 
+.top-bar h1 {
+    flex: 1;  
+}
+
+/* Links normales - visibles solo en tablet/desktop */
+.nav-links {
+    display: none;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font: size 0.75rem;
+    ;
+}
+
+.nav-links a:hover {
+    color: var(--morado2);
+}
+.nav-links a:active {
+    color: var(--naranja);
+}
 /* ========== MENÚ HAMBURGUESA ========== */
 
 /* Botón menú hamburguesa - solo visible en móvil */
@@ -115,9 +157,8 @@ h2 {
     z-index: 1000;
     display: none;
     background-color: var(--morado1);
-    /* Añade fondo por si acaso */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    /* Sombra para que destaque */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra*/
+    
 }
 
 .menu-flotante.active {
@@ -145,33 +186,13 @@ h2 {
     display: block;
     white-space: nowrap;
 }
-}
+
 
 .menu-flotante ul li a:hover {
     color: var(--naranja);
 }
 
-/* Links normales - visibles solo en tablet/desktop */
-.nav-links {
-    display: none;
-    gap: 12px;
-    flex-wrap: wrap;
-    font-weight: 700;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.nav-links a {
-    color: var(--white);
-    text-decoration: none;
-    font: size 0.75rem;
-    ;
-}
-
-.nav-links a:hover {
-    color: var(--morado2);
-}
 
 /* ---> Presentación -Mobile First <--- */
 .presentacion {
@@ -182,13 +203,12 @@ h2 {
 }
 
 .presentacion h1 {
-    line-height: 1.9rem;
     padding-bottom: 30px;
 
 }
 
 .presentacion h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 
@@ -198,7 +218,7 @@ h2 {
 }
 
 .presentacion p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 
 }
 
@@ -206,7 +226,7 @@ h2 {
 .casos {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 50px 50px;
-    margin-top: 20px;
+
     color: var(--morado1);
 
 }
@@ -218,6 +238,17 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.casos h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    color: var(--morado2);
+}
+.casos p {
+    font-size: 1.2rem;
+
+}
+
 
 /* Cards - Mobile First (1 columna) */
 .cards-section {
@@ -242,7 +273,7 @@ h2 {
 }
 
 .custom-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin: 8px 0 0 0;
     flex-grow: 1;
@@ -269,7 +300,7 @@ h2 {
 .experiencia {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 50px 50px;
-    margin-top: 20px;
+    margin-top: 2px;
     color: var(--morado1);
 }
 
@@ -308,10 +339,13 @@ h2 {
 }
 
 .experiencia p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 450;
     line-height: 1.5;
     margin: 0;
+}
+.herramientas {
+    margin-top: 2px;
 }
 
 /* Contacto - Mobile First */
@@ -392,18 +426,18 @@ h2 {
 
 /* ========== TABLET (768px en adelante) ========== */
 @media (min-width: 768px) {
-    .hero {
-        height: 200px;
-    }
+
+
 
     .hero-overlay {
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
 
 
 
     .navbar {
         padding-top: 45px;
+        padding-left: 60px;
         padding-right: 60px;
     }
 
@@ -489,8 +523,9 @@ h2 {
 
 /* ========== DESKTOP (1024px en adelante) ========== */
 @media (min-width: 1024px) {
-    .nav-links {
-        font-size: 1.375rem;
+
+.nav-links {
+        font-size: 1.75rem;
 
 
     }
