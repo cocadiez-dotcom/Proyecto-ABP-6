@@ -192,7 +192,7 @@ h2 {
 }
 
 .custom-card {
-    background-color: var(--morado2);
+    background: rgba(64, 37, 99, 0.85);
     border-radius: 8px;
     padding: 16px;
     color: var(--white);
@@ -209,7 +209,7 @@ h2 {
 }
 
 .custom-card p {
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 8px 0 0 0;
     flex-grow: 1;
@@ -285,7 +285,7 @@ h2 {
 .contact {
     padding-left: 24px;
     padding-right: 24px;
-    background: #3b1b5c;
+    background: rgba(64, 37, 99, 0.85);
     color: white;
     width: 100%;
 }
@@ -506,9 +506,9 @@ h2 {
 }
 
 /* ========== DESKTOP GRANDE (1440px en adelante) ========== */
-@media (min-width: 1680px) {
+@media (min-width: 1440px) {
     .cards-section {
-        max-width: 1400px;
+        max-width: 1440px;
     }
 
     .custom-card h4 {
