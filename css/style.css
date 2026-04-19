@@ -174,12 +174,18 @@ h2 {
 }
 
 .presentacion {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(64, 37, 99, 0.80);
+    padding: 50px 65px;
+    margin-top: 20px;
+    color: var(--white)
+}
+.casos{
+ background-color: rgba(255, 255, 255, 0.85);
     padding: 50px 50px;
     margin-top: 20px;
     color: var(--morado1);
-}
 
+}
 /* Cards - Mobile First (1 columna) */
 .cards-section {
     padding: 10px 15px;
@@ -238,7 +244,7 @@ h2 {
     font-weight: 700;
     font-size: 1.5rem;
     padding-bottom: 20px;
-    color: var(--morado1);
+    color: var(--morado2);
 }
 
 .tit-experiencia h1 {
@@ -500,7 +506,7 @@ h2 {
 }
 
 /* ========== DESKTOP GRANDE (1440px en adelante) ========== */
-@media (min-width: 1440px) {
+@media (min-width: 1680px) {
     .cards-section {
         max-width: 1400px;
     }
