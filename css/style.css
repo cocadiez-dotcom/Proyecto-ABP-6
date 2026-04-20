@@ -27,7 +27,7 @@ body {
     font-family: "Ubuntu Sans", sans-serif;
     background-color: var(--morado1);
     overflow-x: hidden;
-    background-image: url("../assets/images/fondo3.webp");
+    background-image: url("../assets/images/fondo.webp");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
