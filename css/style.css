@@ -7,8 +7,8 @@
     --naranja: #EF7E16;
     --naranja-oscuro: #914A08;
     --lila: #AF9DDD;
-    
 }
+
 :root {
     --text-xs: 0.75rem;    /* 12px */
     --text-sm: 1rem;       /* 16px */
@@ -16,7 +16,9 @@
     --text-md: 1.2rem;     /* 19.2px */
     --text-lg: 1.5rem;     /* 24px */
     --text-xl: 1.75rem;    /* 28px */
-    --text-2xl: 2.5rem;    /* 40px */}
+    --text-2xl: 2.5rem;    /* 40px */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -56,11 +58,10 @@ h2 {
 .hero {
     position: relative;
     height: 200px;
-
 }
 
 .hero-overlay {
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 0;
     right: 0;
@@ -70,7 +71,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .hero-overlay h1 {
@@ -79,11 +79,11 @@ h2 {
     color: white;
     font-size: 2.5rem;
 }
+
 .hero-overlay h2 {
-   
     margin-left: 50px;
-    
 }
+
 .navbar {
     position: absolute;
     top: 0;
@@ -102,7 +102,7 @@ h2 {
 }
 
 .top-bar h1 {
-    flex: 1;  
+    flex: 1;
 }
 
 /* Links normales - visibles solo en tablet/desktop */
@@ -119,19 +119,18 @@ h2 {
 .nav-links a {
     color: var(--white);
     text-decoration: none;
-    font: size 0.75rem;
-    ;
+    font-size: 0.75rem; 
 }
 
 .nav-links a:hover {
     color: var(--morado2);
 }
+
 .nav-links a:active {
     color: var(--naranja);
 }
-/* ========== MENÚ HAMBURGUESA ========== */
 
-/* Botón menú hamburguesa - solo visible en móvil */
+/* ========== MENÚ HAMBURGUESA ========== */
 .menu-btn {
     display: block;
     background: none;
@@ -147,7 +146,6 @@ h2 {
     display: block;
 }
 
-/* Menú flotante - oculto por defecto */
 .menu-flotante {
     position: fixed;
     top: 130px;
@@ -157,8 +155,7 @@ h2 {
     z-index: 1000;
     display: none;
     background-color: var(--morado1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra*/
-    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .menu-flotante.active {
@@ -187,29 +184,24 @@ h2 {
     white-space: nowrap;
 }
 
-
 .menu-flotante ul li a:hover {
     color: var(--naranja);
 }
-
-
 
 /* ---> Presentación -Mobile First <--- */
 .presentacion {
     background-color: rgba(64, 37, 99, 0.80);
     padding: 50px 65px;
     margin-top: 20px;
-    color: var(--white)
+    color: var(--white);
 }
 
 .presentacion h1 {
     padding-bottom: 30px;
-
 }
 
 .presentacion h2 {
     font-size: 1rem;
-
 }
 
 .presentacion h3 {
@@ -219,7 +211,6 @@ h2 {
 
 .presentacion p {
     font-size: 1.2rem;
-
 }
 
 /* ---> Casos -Mobile First <--- */
@@ -250,6 +241,7 @@ h2 {
 .casos p {
     font-size: 1.2rem;
     flex-grow: 1;
+    padding-top: 20px;
 }
 
 .tit-casos h1 {
@@ -270,10 +262,7 @@ h2 {
     margin-top: auto;
 }
 
-
-
-
-/* Cards - Mobile First (1 columna) */
+/* ---> Cards - Mobile First <--- */
 .cards-section {
     padding: 10px 15px;
 }
@@ -301,30 +290,25 @@ h2 {
     margin: 8px 0 0 0;
     flex-grow: 1;
 }
-.fotocard img {
+
+/* Cards - Imágenes responsive */
+.custom-card .fotocard {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: var(--white);
+    aspect-ratio: 16 / 9;  /* Solo una vez */
+}
+
+.custom-card .fotocard img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
-    border-radius: 5px;
-}
-.custom-card .fotocard {
-    width: 100%;
-    height: 200px; 
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: var(--white);
-}
-.custom-card .fotocard img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: top; 
     display: block;
 }
 
 /* ---> EXPERIENCIA -Mobile First <--- */
-
 .experiencia {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 50px 50px;
@@ -372,6 +356,7 @@ h2 {
     line-height: 1.5;
     margin: 0;
 }
+
 .herramientas {
     margin-top: 2px;
 }
@@ -438,7 +423,6 @@ h2 {
     font-size: 1.5rem;
     color: var(--morado1);
     font-weight: 700;
-
 }
 
 .btn-dark:hover {
@@ -454,14 +438,9 @@ h2 {
 
 /* ========== TABLET (768px en adelante) ========== */
 @media (min-width: 768px) {
-
-
-
     .hero-overlay {
         padding: 20px 20px;
     }
-
-
 
     .navbar {
         padding-top: 45px;
@@ -469,12 +448,10 @@ h2 {
         padding-right: 60px;
     }
 
-    /* Ocultar botón hamburguesa en tablet */
     .menu-btn {
         display: none;
     }
 
-    /* Mostrar links normales en tablet */
     .nav-links {
         display: flex;
         gap: 16px;
@@ -488,20 +465,21 @@ h2 {
         padding: 8px;
     }
 
-    /* Ocultar menú flotante en tablet */
     .menu-flotante {
         display: none !important;
     }
- /* casos */
+
+    /* Casos - Tablet: 2 columnas */
     .casos-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    /* Cards - Tablet: 3 columnas */
+
+    /* Cards - Tablet */
     .cards-section {
         padding: 20px 20px;
-    }             
+    }
 
     .custom-card {
         margin-bottom: 0;
@@ -514,20 +492,12 @@ h2 {
     .custom-card p {
         font-size: 1rem;
     }
-    /* Casos - Tablet: 2 columnas */
-
-    .casos-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
 
     /* Experiencia - Tablet: 2 columnas */
     .experiencia {
         padding: 40px 100px;
     }
- 
-    /* solo el título */
+
     .experiencias-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -563,20 +533,12 @@ h2 {
 
 /* ========== DESKTOP (1024px en adelante) ========== */
 @media (min-width: 1024px) {
-
-.nav-links {
-        font-size: 1.75rem;
-
-
-    }
-
     .nav-links a {
         font-size: 1.125rem;
         border-style: solid;
         border-color: rgba(230, 226, 216, 0.3);
         border-radius: 4px;
         padding: 8px;
-
     }
 
     .cards-section {
@@ -589,6 +551,7 @@ h2 {
     .casos {
         padding: 60px 100px;
     }
+
     .casos-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -604,7 +567,6 @@ h2 {
 
     .custom-card {
         transition: transform 0.3s ease;
-
     }
 
     .custom-card:hover {
@@ -619,7 +581,6 @@ h2 {
         padding: 60px;
         margin: 0 auto;
     }
-
 }
 
 /* ========== DESKTOP GRANDE (1440px en adelante) ========== */
