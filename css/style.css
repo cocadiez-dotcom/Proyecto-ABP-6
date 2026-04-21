@@ -438,7 +438,7 @@ h2 {
     box-shadow: 0 0 0 0.2rem rgba(64, 37, 99, 0.2);
 }
 
-/* ========== TABLET (768px en adelante) ========== */
+/* ========== TABLET (834px en adelante) ========== */
 @media (min-width: 834px) {
     .cabecera-overlay {
         padding: 20px 20px;
