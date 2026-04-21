@@ -19,7 +19,7 @@
     --text-2xl: 2.5rem;    /* 40px */
 }
 
-* {x
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -36,6 +36,17 @@ body {
 }
 
 /* ========== MOBILE FIRST (estilos base para móvil) ========== */
+
+.logo-nombre {
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
 h1 {
     color: #FFF;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -73,15 +84,16 @@ h2 {
     justify-content: center;
 }
 
-.cabecera-overlay h1 {
+.cabecera-overlay .logo-nombre {
     margin: 0;
     margin-left: 50px;
     color: white;
     font-size: 2.5rem;
 }
 
-.cabecera-overlay h2 {
+.cabecera-overlay h1 {
     margin-left: 50px;
+    font-size: 1.5rem;
 }
 
 .navbar {
@@ -101,7 +113,7 @@ h2 {
     align-items: center;
 }
 
-.top-bar h1 {
+.top-bar .logo-nombre {
     flex: 1;
 }
 
@@ -196,17 +208,20 @@ h2 {
     color: var(--white);
 }
 
-.presentacion h1 {
+.presentacion .presentacion-texto-principal {
     padding-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-variant: small-caps;
+    margin: 0;
 }
 
 .presentacion h2 {
     font-size: 1rem;
-}
-
-.presentacion h3 {
     padding-bottom: 20px;
-    font-size: 1.1rem;
 }
 
 .presentacion p {
@@ -229,10 +244,11 @@ h2 {
     margin-bottom: 16px;
 }
 
-.custom-card h4 {
+.custom-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 10px 0 0 0;
+    color: var(--white);
 }
 
 .custom-card p {
@@ -248,7 +264,7 @@ h2 {
     overflow: hidden;
     border-radius: 5px;
     background-color: var(--white);
-    aspect-ratio: 16 / 9;  /* Solo una vez */
+    aspect-ratio: 16 / 9;
 }
 
 .custom-card .fotocard img {
@@ -291,7 +307,7 @@ h2 {
     padding-top: 20px;
 }
 
-.tit-casos h1 {
+.tit-casos h2 {
     font-size: 1.75rem;
     font-style: normal;
     text-shadow: none;
@@ -324,7 +340,7 @@ h2 {
     color: var(--morado2);
 }
 
-.tit-experiencia h1 {
+.tit-experiencia h2 {
     font-size: 1.75rem;
     font-style: normal;
     text-shadow: none;
@@ -361,6 +377,13 @@ h2 {
 /* herramientas */
 .herramientas {
     margin-top: 2px;
+}
+
+.herramientas h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--morado2);
+    margin-bottom: 10px;
 }
 
 /* Contacto - Mobile First */
@@ -444,7 +467,7 @@ h2 {
         padding: 20px 20px;
     }
 
-   --> .navbar {
+    .navbar {
         padding-top: 45px;
         padding-left: 60px;
         padding-right: 60px;
@@ -468,7 +491,7 @@ h2 {
     }
 
     .menu-flotante {
-        display: none !important;-->
+        display: none !important;
     }
 
     /* Casos - Tablet: 2 columnas */
@@ -487,7 +510,7 @@ h2 {
         margin-bottom: 0;
     }
 
-    .custom-card h4 {
+    .custom-card h3 {
         font-size: 1.125rem;
     }
 
@@ -591,7 +614,7 @@ h2 {
         max-width: 1440px;
     }
 
-    .custom-card h4 {
+    .custom-card h3 {
         font-size: 1.5rem;
     }
 
