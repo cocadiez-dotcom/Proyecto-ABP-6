@@ -439,12 +439,12 @@ h2 {
 }
 
 /* ========== TABLET (768px en adelante) ========== */
-@media (min-width: 768px) {
+@media (min-width: 834px) {
     .cabecera-overlay {
         padding: 20px 20px;
     }
 
-    .navbar {
+   --> .navbar {
         padding-top: 45px;
         padding-left: 60px;
         padding-right: 60px;
@@ -468,7 +468,7 @@ h2 {
     }
 
     .menu-flotante {
-        display: none !important;
+        display: none !important;-->
     }
 
     /* Casos - Tablet: 2 columnas */
