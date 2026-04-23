@@ -5,15 +5,15 @@
 
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/style-casos.css">
+    <link rel="stylesheet" type="text/css" href="./css/Style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
-
+<meta name="description" content="Portafolio de Coca Diez, Diseñadora de Producto Digital UX/UI. Proyectos de arquitectura de información y diseño centrado en el usuario.">
     <title>Portafolio Coca Diez</title>
 </head>
 
@@ -28,14 +28,12 @@
                     <nav class="navbar">
                         <!-- Botón menú hamburguesa (solo móvil) -->
                         <button class="menu-btn" id="menuBtn">
-                            <!--  <img src="assets/images/menu_icon.svg" alt="Menú de Navegación">-->
+                            <img src="assets/images/menu_icon.svg" alt="Menú de Navegación">
                         </button>
 
                         <!-- Links normales (tablet/desktop) -->
                         <ul class="nav-links">
-                            <li><a href="#proyectos">Proyectos</a></li>
-                            <li><a href="#experiencia">Experiencia</a></li>
-                            <li><a href="#Casos_de_Estudio">Casos</a></li>
+                            <li><a href="index.html">Volver</a></li>
                             <li><a href="#contacto">Contacto</a></li>
                         </ul>
                     </nav>
@@ -48,167 +46,185 @@
 
         <div class="menu-flotante" id="menuFlotante">
             <ul>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#Casos_de_Estudio">Casos</a></li>
+                <li><a href="index.html">Volver</a></li>
                 <li><a href="#contacto">Contacto</a></li>
 
             </ul>
         </div>
+        <!-- sección desarrollo de caso -->
 
-        <!--Seccion presentacion personal-->
+        <section class="casos">
+    <div class="tit-casos">
+        <h2>Investigación de arquitectura de la información, Aula Digital</h2>
+    </div>
+    <div class="cada_caso">
+        
+        <h3>Proyecto enfocado en el rediseño de la arquitectura de la información de una plataforma
+            educativa digital.
+            El objetivo fue mejorar la navegación, la organización de contenidos y la eficiencia en
+            tareas clave, permitiendo a los usuarios encontrar, acceder y gestionar cursos de manera más
+            intuitiva.</h3>
 
-        <!-- <section class="presentacion" id="presentacion">
-            <div>
-                <h2>PRODUCT DESIGNER | UX/UI | UX RESEARCH | FRONT-END (HTML/CSS)</h2>
-                <p class="presentacion-texto-principal">
-                    DISEÑO PRODUCTOS DIGITALES INTEGRANDO INVESTIGACIÓN UX, COMUNICACIÓN Y UNA BASE TÉCNICA QUE CONECTA
-                    EL DISEÑO CON SU IMPLEMENTACIÓN.
-                </p>
+       <!-- BLOQUE 1: El Desafío -->
+<div class="bloque-con-imagen">
+    <div class="bloque-contenido">
+        <h4>El Desafío...</h4>
+        <div class="contenido-con-imagen">
+            <div class="texto">
+                <p>La plataforma presentaba problemas de navegación y organización de contenidos que generaban confusión en los usuarios:</p>
+                <ul>
+                    <li>Dificultad para encontrar cursos específicos</li>
+                    <li>Estructura poco clara y jerarquía confusa</li>
+                    <li>Ambigüedad en etiquetas (ej: “Ajustes” vs “Datos personales”)</li>
+                    <li>Desorientación en tareas clave como búsqueda y gestión de cuenta</li>
+                </ul>
+                <p>Esto generaba fricción cognitiva, pérdida de tiempo y una experiencia poco eficiente.</p>
             </div>
-
-            
-        </section> -->
-
-        <!-- sección 1 - Cards (3 columnas en tablet y desktop) -->
-
-        <section id="proyectos" class="cards-section">
-            <div class="container">
-                <div class="row g-3 g-md-4">
-                    <!-- sección desarrollo de caso -->
-
-                    <section class="casos">
-                        <div class="tit-casos">
-                            <h2>Investigación de arquitectura de la información, Aula Digital</h2>
-                        </div class="cada_caso">
-
-                        <h3>Proyecto enfocado en el rediseño de la arquitectura de la información de una plataforma
-                            educativa digital.
-                            El objetivo fue mejorar la navegación, la organización de contenidos y la eficiencia en
-                            tareas clave, permitiendo a los usuarios encontrar, acceder y gestionar cursos de manera más
-                            intuitiva.</h3>
-
-                        <h4>El Desafío...</h4>
-                        <!-- <img class="foto-casos" src="assets/images/Caso2.webp"> -->
-                        <p>La plataforma presentaba problemas de navegación y organización de contenidos que generaban
-                            confusión en los usuarios:
-                        </p>
-                        <ul>
-                            <li>Dificultad para encontrar cursos específicos</li>
-                            <li>Estructura poco clara y jerarquía confusa</li>
-                            <li>Ambigüedad en etiquetas (ej: “Ajustes” vs “Datos personales”)</li>
-                            <li>Desorientación en tareas clave como búsqueda y gestión de cuenta</li>
-                        </ul>
-
-                        <p>
-                            Esto generaba fricción cognitiva, pérdida de tiempo y una experiencia poco eficiente.</p>
-
-                        <h4>Solución Propuesta</h4>
-
-                        <p>Se diseñó una nueva arquitectura basada en principios de usabilidad y modelos mentales de los
-                            usuarios:
-
-                        <ul>
-                            <li>Implementación de taxonomía facetada para mejorar la búsqueda de cursos</li>
-                            <li>Diseño de un Dashboard central (modelo Hub-and-Spoke) para unificar la gestión del
-                                usuario</li>
-                            <li>Reorganización del contenido mediante mapa de sitio optimizado</li>
-                            <li>Mejora en la jerarquía y etiquetado de información</li>
-                            <li>Validación de la estructura mediante testing con usuarios</li>
-                        </ul>
-
-                        <p>El enfoque buscó reducir la fricción y facilitar la navegación en todos los niveles de la
-                            plataforma.</p>
-                        <!-- 
-                        Caption (debajo de la imagen): Benchmark de plataformas educativas utilizado para identificar
-                        patrones de navegación y organización de contenidos. -->
-                        <h4>Herramientas Utilizadas</h4>
-                        <p>Herramientas:</p>
-                        <ul>
-                            <li>Balsamic</li>
-                            <li>UXtweak </li>
-                        </ul>
-                        <p>Técnicas UX:</p>
-                        <ul>
-                            <li>Benchmark</li>
-                            <li>Test de guerrilla<br> (cuantitativo y cualitativo)</li>
-                            <li>User Personas</li>
-                            <li>Card Sorting</li>
-                            <li>Tree Testing</li>
-
-                        </ul>
-
-                        <!-- <img class="foto-casos" src="assets/images/Card-soting.webp" alt="Pantalla de card sorting">
-                        
-                        Caption:
- 
-                        Ejercicio de estructuración de contenidos que permitió definir agrupaciones y jerarquías de
-                        navegación. -->
-
-                        <h4>Aprendizajes Clave</h4>
-                        <p>La arquitectura de la información define gran parte de la experiencia del usuario:<p>
-                           <ul><li>Las etiquetas mal definidas generan errores críticos de navegación.</li>
-                                <li> Validar con usuarios es clave: lo que parece claro en diseño no siempre lo es en uso real.</li>
-                                <li> Los modelos mentales de los usuarios deben guiar la estructura, no la lógica del negocio</li></ul>
-
-                        <!-- <h5>La solución consideró:</h5>
-
-                        <ul>
-                            <li>Jerarquías más claras</li>
-                            <li>Agrupaciones coherentes</li>
-                            <li>Navegación simplificada</li>
-                        </ul>
-              <img class="foto-casos" src="assets/images/Caso2.webp" alt="Mapa de sitio final o arquitectura definida"> 
-                        Caption:Arquitectura de información propuesta, organizada para mejorar la navegación y la
-                        encontrabilidad. -->
-
-                        <h4>Métricas de impacto logradas</h4>
-
-                        <ul>
-                            <li>42.9% tasa de éxito general en navegación</li>
-                            <li>85.7% acierto en primer clic en sección principal (Explorar)</li>
-                            <li>Identificación de puntos críticos de confusión en navegación profunda</li>
-                            <li>Detección de “fugas” hacia secciones incorrectas como “Ayuda”</li>
-                        </ul>
-                        <p>Estos resultados evidenciaron la necesidad de mejorar jerarquía y etiquetado para aumentar la
-                            eficiencia.
-                        </p>
-
-
-
-                        <!-- <img class="foto-casos" src="assets/images/wireframes.webp"  alt="Wireframe principal"> 
-                  
-                        Caption:Wireframe de baja fidelidad que representa la estructura y navegación propuesta. -->
-
-                        <h4>Habilidades técnicas aplicadas</h4>
-                       
-
-                        <ul>
-                            <li> UX Research</li>
-                            <li>Arquitectura de la información</li>
-                            <li>Análisis de usabilidad</li>
-                            <li>Diseño centrado en el usuario (DCU)</li>
-                            <li>Pensamiento estructural</li>
-                            <li>Interpretación de datos de testing</li>
-                        </ul>
-
-
-                        <h4>Por que muestro este proyecto?</h4>
-
-                        <p>Elegí este proyecto porque me permite demostrar habilidades clave como Product Designer:</p>
-<ul>
-    <li>Capacidad para analizar problemas complejos de navegación</li>
-    <li>Uso de metodologías UX aplicadas a un caso real</li>
-    <li>Toma de decisiones basada en evidencia</li>
-    <li>Impacto directo en la estructura y usabilidad del producto</li>
-</ul>
-<p>Además, refleja mi enfoque en la base estructural de la experiencia, más allá del diseño visual.</p>
-                        <a href="index.html">Volver</a>
-                </div>
+            <div class="imagen">
+                <img src="assets/images/hallagos-benchmark.webp" alt="Problemas de navegación en la plataforma">
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- BLOQUE 2: Solución Propuesta -->
+<div class="bloque-con-imagen">
+    <div class="bloque-contenido">
+        <h4>Solución Propuesta</h4>
+        <div class="contenido-con-imagen">
+            <div class="texto">
+                <p>Se diseñó una nueva arquitectura basada en principios de usabilidad y modelos mentales de los usuarios:</p>
+                <ul>
+                    <li>Implementación de taxonomía facetada para mejorar la búsqueda de cursos</li>
+                    <li>Diseño de un Dashboard central (modelo Hub-and-Spoke) para unificar la gestión del usuario</li>
+                    <li>Reorganización del contenido mediante mapa de sitio optimizado</li>
+                    <li>Mejora en la jerarquía y etiquetado de información</li>
+                    <li>Validación de la estructura mediante testing con usuarios</li>
+                </ul>
+                <p>El enfoque buscó reducir la fricción y facilitar la navegación en todos los niveles de la plataforma.</p>
             </div>
+            <div class="imagen">
+                <img src="assets/images/mapa-final.webp" alt="Arquitectura de información propuesta">
             </div>
-        </section>
+        </div>
+    </div>
+</div>
+
+<!-- BLOQUE 3: Herramientas Utilizadas -->
+<div class="bloque-con-imagen">
+    <div class="bloque-contenido">
+        <h4>Herramientas Utilizadas</h4>
+        <div class="contenido-con-imagen">
+            <div class="texto">
+                <p><strong>Herramientas:</strong></p>
+                <ul>
+                    <li>Balsamic</li>
+                    <li>UXtweak</li>
+                </ul>
+                <p><strong>Técnicas UX:</strong></p>
+                <ul>
+                    <li>Benchmark</li>
+                    <li>Test de guerrilla<br>(cuantitativo y cualitativo)</li>
+                    <li>User Personas</li>
+                    <li>Card Sorting</li>
+                    <li>Tree Testing</li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/images/" alt="Herramientas UX utilizadas en el proyecto">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BLOQUE 4: Aprendizajes Clave -->
+<div class="bloque-con-imagen">
+    <div class="bloque-contenido">
+        <h4>Aprendizajes Clave</h4>
+        <div class="contenido-con-imagen">
+            <div class="texto">
+                <p>La arquitectura de la información define gran parte de la experiencia del usuario:</p>
+                <ul>
+                    <li>Las etiquetas mal definidas generan errores críticos de navegación.</li>
+                    <li>Validar con usuarios es clave: lo que parece claro en diseño no siempre lo es en uso real.</li>
+                    <li>Los modelos mentales de los usuarios deben guiar la estructura, no la lógica del negocio.</li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/images/aprendizajes.webp" alt="Lecciones aprendidas del proyecto">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BLOQUE 5: Métricas de impacto logradas -->
+<div class="bloque-con-imagen">
+    <div class="bloque-contenido">
+        <h4>Métricas de impacto logradas</h4>
+        <div class="contenido-con-imagen">
+            <div class="texto">
+                <ul>
+                    <li>42.9% tasa de éxito general en navegación</li>
+                    <li>85.7% acierto en primer clic en sección principal (Explorar)</li>
+                    <li>Identificación de puntos críticos de confusión en navegación profunda</li>
+                    <li>Detección de “fugas” hacia secciones incorrectas como “Ayuda”</li>
+                </ul>
+                <p>Estos resultados evidenciaron la necesidad de mejorar jerarquía y etiquetado para aumentar la eficiencia.</p>
+            </div>
+            <div class="imagen">
+                <img src="assets/images/metricas.webp" alt="Gráfico de métricas de impacto logradas">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BLOQUE 6: Habilidades técnicas aplicadas -->
+<div class="bloque-con-imagen">
+    <div class="bloque-contenido">
+        <h4>Habilidades técnicas aplicadas</h4>
+        <div class="contenido-con-imagen">
+            <div class="texto">
+                <ul>
+                    <li>UX Research</li>
+                    <li>Arquitectura de la información</li>
+                    <li>Análisis de usabilidad</li>
+                    <li>Diseño centrado en el usuario (DCU)</li>
+                    <li>Pensamiento estructural</li>
+                    <li>Interpretación de datos de testing</li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/images/habilidades.webp" alt="Habilidades técnicas aplicadas en UX">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BLOQUE 7: Por qué muestro este proyecto -->
+<div class="bloque-con-imagen">
+    <div class="bloque-contenido">
+        <h4>¿Por qué muestro este proyecto?</h4>
+        <div class="contenido-con-imagen">
+            <div class="texto">
+                <p>Elegí este proyecto porque me permite demostrar habilidades clave como Product Designer:</p>
+                <ul>
+                    <li>Capacidad para analizar problemas complejos de navegación</li>
+                    <li>Uso de metodologías UX aplicadas a un caso real</li>
+                    <li>Toma de decisiones basada en evidencia</li>
+                    <li>Impacto directo en la estructura y usabilidad del producto</li>
+                </ul>
+                <p>Además, refleja mi enfoque en la base estructural de la experiencia, más allá del diseño visual.</p>
+            </div>
+            <div class="imagen">
+                <img src="assets/images/porque.webp" alt="Valor del proyecto para mi portafolio profesional">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <a href="index.html">Volver</a>
+    </div>
+</section>
 
 
 

@@ -63,7 +63,7 @@ h2 {
     font-weight: 400;
     font-variant: small-caps;
     color: var(--beige);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .cabecera {
@@ -93,7 +93,7 @@ h2 {
 
 .cabecera-overlay h1 {
     margin-left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .navbar {
@@ -294,10 +294,36 @@ h2 {
     height: 100%;
 }
 
+a {
+    color: #402563;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #914A08;
+}
+
 .casos h3 {
     font-weight: 700;
     font-size: 1.5rem;
     padding-bottom: 20px;
+    color: var(--morado2);
+}
+
+.casos ul {
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+.casos li {
+    font-size: 1.2rem;
+}
+
+.casos h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-top: 10px;
     color: var(--morado2);
 }
 
@@ -324,6 +350,7 @@ h2 {
     border-radius: 5px;
     margin-top: auto;
 }
+
 
 /* ---> EXPERIENCIA -Mobile First <--- */
 .experiencia {
@@ -461,6 +488,65 @@ h2 {
     box-shadow: 0 0 0 0.2rem rgba(64, 37, 99, 0.2);
 }
 
+/* ========== NUEVOS ESTILOS PARA IMÁGENES EN BLOQUES ========== */
+/* Contenedor de cada bloque (h4 + contenido + imagen) */
+.bloque-con-imagen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Contenedor del contenido textual */
+.bloque-contenido {
+    flex: 1;
+}
+
+/* Contenedor de la imagen (versión anterior - se mantiene por compatibilidad) */
+.bloque-imagen {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.bloque-imagen img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.bloque-imagen img:hover {
+    transform: scale(1.05);
+}
+
+/* Ajustes específicos para la sección de casos */
+.casos .bloque-con-imagen {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(64, 37, 99, 0.1);
+}
+
+.casos .bloque-con-imagen:last-child {
+    border-bottom: none;
+}
+
+/* NUEVO: Contenedor para texto e imagen lado a lado (debajo del h4) */
+.contenido-con-imagen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* Para listas dentro de bloques con imagen */
+.bloque-contenido ul, 
+.bloque-contenido p {
+    margin-top: 0;
+}
+
 /* ========== TABLET (834px en adelante) ========== */
 @media (min-width: 834px) {
     .cabecera-overlay {
@@ -554,10 +640,53 @@ h2 {
         text-align: left;
         gap: 20px;
     }
+    
+    /* Estilos para bloques con imagen en tablet */
+    .bloque-con-imagen {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+    
+    .bloque-imagen {
+        width: 200px;
+    }
+    
+    .bloque-imagen img {
+        max-width: 180px;
+    }
+    
+    /* NUEVO: En tablet, el contenido y la imagen van lado a lado */
+    .contenido-con-imagen {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    .contenido-con-imagen .texto {
+        flex: 1;
+    }
+    
+    .contenido-con-imagen .imagen {
+        flex-shrink: 0;
+        width: 200px;
+    }
+    
+    .contenido-con-imagen .imagen img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 }
 
 /* ========== DESKTOP (1024px en adelante) ========== */
 @media (min-width: 1024px) {
+    .cabecera-overlay h1 {
+        margin-left: 50px;
+        font-size: 1.75rem;
+    }
+    
     .nav-links a {
         font-size: 1.125rem;
         border-style: solid;
@@ -605,6 +734,20 @@ h2 {
     .contact {
         padding: 60px;
         margin: 0 auto;
+    }
+    
+    /* Estilos para imágenes en desktop */
+    .bloque-imagen img {
+        max-width: 220px;
+    }
+    
+    /* NUEVO: En desktop, la imagen un poco más grande */
+    .contenido-con-imagen .imagen {
+        width: 220px;
+    }
+    
+    .contenido-con-imagen .imagen img {
+        max-width: 220px;
     }
 }
 
