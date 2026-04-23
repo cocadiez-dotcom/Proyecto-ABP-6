@@ -655,7 +655,6 @@ a:hover {
 
 /* ============================================ */
 /* === NUEVOS ESTILOS SOLO PARA PÁGINA DEL CASO === */
-/* === NO AFECTAN A LA HOME === */
 /* ============================================ */
 
 /* Contenedor de cada bloque de la página del caso */
@@ -680,12 +679,12 @@ a:hover {
 
 /* Control de imagen en móvil */
 .contenido-con-imagen .imagen {
-    text-align: center;
+    text-align: left;
     flex-shrink: 0;
 }
 
 .contenido-con-imagen .imagen img {
-    max-width: 160px;
+    max-width: 70%;
     width: auto;
     height: auto;
     border-radius: 8px;
