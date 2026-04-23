@@ -541,6 +541,21 @@ a:hover {
     margin-top: 10px;
 }
 
+/* ✅ CORRECCIÓN MÓVIL: Control del tamaño de la imagen */
+.contenido-con-imagen .imagen {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.contenido-con-imagen .imagen img {
+    max-width: 160px;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
 /* Para listas dentro de bloques con imagen */
 .bloque-contenido ul, 
 .bloque-contenido p {
@@ -669,11 +684,12 @@ a:hover {
     .contenido-con-imagen .imagen {
         flex-shrink: 0;
         width: 200px;
+        text-align: right;
     }
     
     .contenido-con-imagen .imagen img {
-        width: 100%;
         max-width: 180px;
+        width: 100%;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -748,6 +764,7 @@ a:hover {
     
     .contenido-con-imagen .imagen img {
         max-width: 220px;
+        width: 100%;
     }
 }
 
