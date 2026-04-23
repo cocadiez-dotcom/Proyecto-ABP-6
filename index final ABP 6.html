@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- HEAD -->
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+    <title>Portafolio Coca Diez</title>
+</head>
+
+<!-- BODY -->
+
+<body>
+    <main>
+        <header class="cabecera">
+            <div class="cabecera-overlay">
+                <div class="top-bar">
+                    <div class="logo-nombre">COCA DIEZ</div>
+                    <nav class="navbar">
+                        <!-- Botón menú hamburguesa (solo móvil) -->
+                        <button class="menu-btn" id="menuBtn">
+                            <img src="assets/images/menu_icon.svg" alt="Menú de Navegación">
+                        </button>
+
+                        <!-- Links normales (tablet/desktop) -->
+                        <ul class="nav-links">
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#experiencia">Experiencia</a></li>
+                            <li><a href="#Casos_de_Estudio">Casos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <h1>DISEÑO DE PRODUCTO DIGITAL | UX/UI</h1>
+            </div>
+        </header>
+
+        <!-- Menú flotante que aparece al hacer tap -->
+
+        <div class="menu-flotante" id="menuFlotante">
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#Casos_de_Estudio">Casos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            
+            </ul>
+        </div>
+
+        <!--Seccion presentacion personal-->
+
+        <section class="presentacion" id="presentacion">
+            <div>
+                <h2>PRODUCT DESIGNER | UX/UI | UX RESEARCH | FRONT-END (HTML/CSS)</h2>
+                <p class="presentacion-texto-principal">
+                    DISEÑO PRODUCTOS DIGITALES INTEGRANDO INVESTIGACIÓN UX, COMUNICACIÓN Y UNA BASE TÉCNICA QUE CONECTA
+                    EL DISEÑO CON SU IMPLEMENTACIÓN.
+                </p>
+            </div>
+
+            <p>Mi trabajo integra investigación UX, diseño de interfaces y una base técnica en front-end que facilita la
+                colaboración con desarrollo y la implementación de soluciones. Utilizo investigación cualitativa y
+                fundamentos de comportamiento del usuario para orientar decisiones de diseño de forma informada. En los
+                últimos años he trabajado de forma independiente en proyectos digitales, mientras profundizo
+                metodologías UX/UI. Me interesa aportar en equipos donde el diseño tenga un rol claro en la experiencia
+                del usuario y en los objetivos del negocio.
+            </p>
+        </section>
+
+        <!-- sección 1 - Cards (3 columnas en tablet y desktop) -->
+        
+        <section id="proyectos" class="cards-section">
+            <div class="container">
+                <div class="row g-3 g-md-4">
+                    
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="custom-card">
+                            <div class="fotocard">
+                                <img src="assets/images/cyt.webp" alt="foto portada de proyecto web UX/UI">
+                            </div>
+                            <h3>Sector Vitivinícola</h3>
+                            <p>Diseño UX/UI y desarrollo front-end para un ecosistema digital multilenguaje.
+                                Participación en el rediseño de la experiencia y la estructura de contenidos, mejorando
+                                la navegación y la coherencia entre plataformas a lo largo de distintos ciclos de
+                                evolución del producto.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="custom-card">
+                            <div class="fotocard">
+                                <img src="assets/images/casabarros.webp" alt="foto portada de proyecto web UX/UI">
+                            </div>
+                            <h3>Sector Artículos de Lujo UX/UI</h3>
+                            <p>Diseño y evolución de sitio web, integrando UX/UI, SEO y gestión de contenidos. Trabajo
+                                enfocado en mantener coherencia en la experiencia y en la comunicación digital,
+                                adaptando el producto a cambios en necesidades del negocio y del usuario.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="custom-card">
+                            <div class="fotocard">
+                                <img src="assets/images/goumet.webp" alt="foto portada de proyecto web UX/UI">
+                            </div>
+                            <h3>Sector Alimentos</h3>
+                            <p>Diseño y mejora continua de productos digitales, integrando UX/UI, SEO y gestión de
+                                contenidos. Trabajo iterativo orientado a la experiencia del usuario, ajustando
+                                estructura y navegación en función de la evolución del producto y su contexto digital.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+
+                </div>
+            </div>
+        </section>
+
+                <!-- sección 2 - Casos de Estudio -->
+
+        <section class="casos" id="Casos_de_Estudio">
+            <div class="tit-casos">
+                <h2>Casos de estudio</h2>
+            </div>
+
+            <div class="casos-grid">
+                <div class="cada_caso">
+                    <h3>Investigación de experiencia de usuario, Aula Digital</h3>
+                    <img class="foto-casos" src="assets/images/Caso1.webp" alt="Foto de una pantalla de caso de investigación UX/UI">
+                    <p>Investigación UX para plataforma educativa digital, con foco en accesibilidad. Se realizaron
+                        entrevistas, benchmark, user personas y journey maps para identificar necesidades y definir
+                        lineamientos de diseño y wireframes.
+
+                    </p>
+
+                </div>
+                <div class="cada_caso">
+                    <h3>Investigación de arquitectura de la información, Aula Digital
+                    </h3>
+                    <img class="foto-casos" src="assets/images/Caso2.webp" alt="Foto de una pantalla de caso de investigación UX/UI">
+                    <p>Diseño y validación de arquitectura de información para mejorar navegación y encontrabilidad de
+                        contenidos. Incluyó card sorting, mapa de sitio y pruebas como tree testing.
+
+                    </p>
+
+                </div>
+
+                <div class="cada_caso">
+                    <h3>Investigación y diseño de interfaz UX/UI, Auloria</h3>
+                    <img class="foto-casos" src="assets/images/Caso3.webp" alt="Foto de una pantalla de caso de investigación UX/UI">
+                    <p>
+                        Rediseño de interfaz para plataforma EdTech, enfocado en mejorar usabilidad y jerarquía visual.
+                        Incluyó evaluación heurística, iteración de wireframes y prototipo de alta fidelidad validado
+                        con usuarios.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- sección 3 - Experiencia -->
+
+        <section class="experiencia" id="experiencia">
+            <div class="tit-experiencia">
+                <h2>Experiencia</h2>
+            </div>
+
+            <div class="experiencias-grid">
+                <div class="cada_experiencia">
+                    <h3>Diseño de producto digital</h3>
+                    <p>Experiencia en diseño UX/UI abarcando desde la arquitectura de información hasta la interfaz
+                        final. Trabajo considerando usabilidad, estructura de contenidos y viabilidad técnica para
+                        facilitar la implementación.</p>
+
+                </div>
+
+                <div class="cada_experiencia">
+                    <h3>Trabajo con desarrollo
+                    </h3>
+                    <p>
+                        Base en HTML/CSS que permite colaborar de forma fluida con equipos técnicos, asegurando que las
+                        propuestas de diseño sean consistentes y viables de implementar.
+                    </p>
+                </div>
+                <div class="cada_experiencia">
+                    <h3>Investigación UX/UI
+                    </h3>
+                    <p>
+                        Aplicación de metodologías de investigación UX como entrevistas, benchmark, test de usabilidad,
+                        user personas y customer journey maps para entender a los usuarios y orientar decisiones de
+                        diseño.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección 4 - Herramientas -->
+
+        <section class="experiencia" id="Herramientas">
+            <div class="herramientas">
+                <h4>Herramientas:</h4>
+                <p>Figma, Adobe Suite, HTML/CSS, Bootstrap, Visual Studio Code, Google Analytics.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- #### FORMULARIO DE CONTACTO  -->
+
+        <footer class="contact" id="contacto">
+            <div class="contact-left">
+                <div class="profile"><img src="assets/images/yo2.jpg" alt="foto de Coca Diez"></div>
+                <h2>CONTACTO</h2>
+                <h3>Trabajemos juntos</h3>
+                <div class="profile">
+                    <p>Si estás trabajando en un producto digital o necesitas apoyo en diseño UX/UI, puedes
+                        contactarme.
+                        Estoy disponible para colaborar en proyectos y oportunidades laborales.
+                    </p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form id="contactForm" action="https://formsubmit.co/cocadiez@gmail.com" method="POST">
+                    <!-- Nombre -->
+                    <div>Tu nombre</div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+                        <label for="nombre">Nombre</label>
+                        <div class="invalid-feedback">
+                            Ingresa tu nombre.
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div>Tu correo</div>
+                    <div class="form-floating mb-3">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="tu@email.com"
+                            required>
+                        <label for="email">Email</label>
+                        <div class="invalid-feedback">
+                            Ingresa un email válido.
+                        </div>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div>Tu mensaje</div>
+                    <div class="form-floating mb-3">
+                        <textarea name="mensaje" class="form-control" placeholder="Cuéntame..." id="mensaje"
+                            style="height: 120px" required></textarea>
+                        <label for="mensaje">Mensaje</label>
+                        <div class="invalid-feedback">
+                            Escribe un mensaje.
+                        </div>
+                    </div>
+
+                    <!-- Config -->
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Botón -->
+                    <button type="submit" class="btn btn-dark w-100">
+                        Enviar <img src="assets/images/right-arrow.svg" alt="iconobotón enviar">
+                    </button>
+
+                    <!-- Feedback -->
+                    <div id="formAlert" class="alert alert-success mt-3 d-none">
+                        ¡Muchas gracias! El mensaje fue enviado correctamente. Me pondré en contacto lo antes posible.
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </main>
+    <!-- SCRIPTS -->
+    <script>
+        // ========== MENÚ HAMBURGUESA ==========
+        const menuBtn = document.getElementById('menuBtn');
+        const menuFlotante = document.getElementById('menuFlotante');
+
+        // Abrir/cerrar menú al hacer clic en el botón
+        if (menuBtn && menuFlotante) {
+            menuBtn.addEventListener('click', function (event) {
+                event.stopPropagation();
+                menuFlotante.classList.toggle('active');
+            });
+
+            // Cerrar al hacer clic fuera
+            document.addEventListener('click', function (event) {
+                if (!menuBtn.contains(event.target) && !menuFlotante.contains(event.target)) {
+                    menuFlotante.classList.remove('active');
+                }
+            });
+
+            // Cerrar al hacer clic en un enlace
+            document.querySelectorAll('.menu-flotante a').forEach(link => {
+                link.addEventListener('click', function () {
+                    menuFlotante.classList.remove('active');
+                });
+            });
+        }
+
+        // ========== SCROLL PARA LOS ENLACES ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ========== FORMULARIO DE CONTACTO ==========
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById('contactForm');
+            const alertBox = document.getElementById('formAlert');
+            const button = form?.querySelector("button");
+
+            if (!form) {
+                console.error("Formulario no encontrado");
+                return;
+            }
+
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault();
+
+                const nombre = form.querySelector('#nombre');
+                const email = form.querySelector('#email');
+                const mensaje = form.querySelector('#mensaje');
+
+                let isValid = true;
+
+                // Validar nombre
+                if (!nombre.value.trim()) {
+                    nombre.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    nombre.classList.remove('is-invalid');
+                    nombre.classList.add('is-valid');
+                }
+
+                // Validar email
+                if (!email.value.trim() || !email.value.includes('@')) {
+                    email.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    email.classList.remove('is-invalid');
+                    email.classList.add('is-valid');
+                }
+
+                // Validar mensaje
+                if (!mensaje.value.trim()) {
+                    mensaje.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    mensaje.classList.remove('is-invalid');
+                    mensaje.classList.add('is-valid');
+                }
+
+                if (!isValid) {
+                    alertBox.classList.remove('d-none', 'alert-success');
+                    alertBox.classList.add('alert-danger');
+                    alertBox.innerText = "Por favor completa todos los campos correctamente.";
+                    return;
+                }
+
+                button.innerText = "Enviando...";
+                button.disabled = true;
+
+                const data = new FormData(form);
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: "POST",
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        alertBox.classList.remove('d-none', 'alert-danger');
+                        alertBox.classList.add('alert-success');
+                        alertBox.innerText = "¡Mensaje enviado correctamente!";
+
+                        form.reset();
+
+                        form.querySelectorAll('.form-control').forEach(el => {
+                            el.classList.remove('is-valid', 'is-invalid');
+                        });
+                    } else {
+                        throw new Error();
+                    }
+                } catch (error) {
+                    alertBox.classList.remove('d-none', 'alert-success');
+                    alertBox.classList.add('alert-danger');
+                    alertBox.innerText = "Error al enviar. Intenta nuevamente.";
+                }
+
+                button.innerText = "Enviar";
+                button.disabled = false;
+            });
+        });
+    </script>
+</body>
+
+</html>

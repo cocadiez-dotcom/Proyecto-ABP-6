@@ -1,0 +1,624 @@
+/* variables de color */
+:root {
+    --morado1: #1F0D36;
+    --morado2: #402563;
+    --beige: #E6E2D8;
+    --white: #FFFFFF;
+    --naranja: #EF7E16;
+    --naranja-oscuro: #914A08;
+    --lila: #AF9DDD;
+}
+
+:root {
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 1rem;       /* 16px */
+    --text-base: 1.125rem; /* 18px */
+    --text-md: 1.2rem;     /* 19.2px */
+    --text-lg: 1.5rem;     /* 24px */
+    --text-xl: 1.75rem;    /* 28px */
+    --text-2xl: 2.5rem;    /* 40px */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu Sans", sans-serif;
+    background-color: var(--morado1);
+    overflow-x: hidden;
+    background-image: url("../assets/images/fondo.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ========== MOBILE FIRST (estilos base para móvil) ========== */
+
+.logo-nombre {
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h1 {
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+h2 {
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 400;
+    font-variant: small-caps;
+    color: var(--beige);
+    font-size: 1.5rem;
+}
+
+.cabecera {
+    position: relative;
+    height: 200px;
+}
+
+.cabecera-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-30%);
+    background: rgba(64, 37, 99, 0.7);
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecera-overlay .logo-nombre {
+    margin: 0;
+    margin-left: 50px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.cabecera-overlay h1 {
+    margin-left: 50px;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 20px;
+    z-index: 2;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .logo-nombre {
+    flex: 1;
+}
+
+/* Links normales - visibles solo en tablet/desktop */
+.nav-links {
+    display: none;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-weight: 700;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.75rem; 
+}
+
+.nav-links a:hover {
+    color: var(--morado2);
+}
+
+.nav-links a:active {
+    color: var(--naranja);
+}
+
+/* ========== MENÚ HAMBURGUESA ========== */
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1001;
+}
+
+.menu-btn img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.menu-flotante {
+    position: fixed;
+    top: 130px;
+    right: 20px;
+    border-radius: 4px;
+    padding: 8px 8px;
+    z-index: 1000;
+    display: none;
+    background-color: var(--morado1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.menu-flotante.active {
+    display: block;
+}
+
+.menu-flotante ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-flotante ul li {
+    margin: 4px 0;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: var(--morado1);
+}
+
+.menu-flotante ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+    display: block;
+    white-space: nowrap;
+}
+
+.menu-flotante ul li a:hover {
+    color: var(--naranja);
+}
+
+/* ---> Presentación -Mobile First <--- */
+.presentacion {
+    background-color: rgba(64, 37, 99, 0.80);
+    padding: 50px 65px;
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.presentacion .presentacion-texto-principal {
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+.presentacion h2 {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.presentacion p {
+    font-size: 1.2rem;
+}
+
+/* ---> Cards - Mobile First <--- */
+.cards-section {
+    padding: 10px 15px;
+}
+
+.custom-card {
+    background: rgba(64, 37, 99, 0.85);
+    border-radius: 8px;
+    padding: 16px;
+    color: var(--white);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.custom-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    color: var(--white);
+}
+
+.custom-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 8px 0 0 0;
+    flex-grow: 1;
+}
+
+/* Cards - Imágenes responsive */
+.custom-card .fotocard {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: var(--white);
+    aspect-ratio: 16 / 9;
+}
+
+.custom-card .fotocard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+
+/* ---> Casos -Mobile First <--- */
+.casos {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 50px 50px;
+    color: var(--morado1);
+}
+
+.cada_caso {
+    border-left: 3px solid var(--lila);
+    padding-left: 15px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.casos h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    color: var(--morado2);
+}
+
+.casos p {
+    font-size: 1.2rem;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.tit-casos h2 {
+    font-size: 1.75rem;
+    font-style: normal;
+    text-shadow: none;
+    color: var(--morado1);
+    font-variant: normal;
+    padding-bottom: 30px;
+}
+
+.foto-casos {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+/* ---> EXPERIENCIA -Mobile First <--- */
+.experiencia {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 50px 50px;
+    margin-top: 2px;
+    color: var(--morado1);
+}
+
+.experiencia h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    color: var(--morado2);
+}
+
+.tit-experiencia h2 {
+    font-size: 1.75rem;
+    font-style: normal;
+    text-shadow: none;
+    color: var(--morado1);
+    font-variant: normal;
+    padding-bottom: 30px;
+}
+
+.cada_experiencia {
+    border-left: 3px solid var(--lila);
+    padding-left: 15px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cada_experiencia:last-child {
+    margin-bottom: 0;
+}
+
+.cada_experiencia h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.experiencia p {
+    font-size: 1.2rem;
+    font-weight: 450;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* herramientas */
+.herramientas {
+    margin-top: 2px;
+}
+
+.herramientas h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--morado2);
+    margin-bottom: 10px;
+}
+
+/* Contacto - Mobile First */
+.contact {
+    padding-left: 24px;
+    padding-right: 24px;
+    background: rgba(64, 37, 99, 0.85);
+    color: white;
+    width: 100%;
+}
+
+.contact-left {
+    margin-bottom: 30px;
+}
+
+.contact-left h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-left: 24px;
+}
+
+.contact-left h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-left: 24px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-top: 24px;
+    text-align: center;
+    gap: 15px;
+    margin: 0;
+}
+
+.profile p {
+    font-size: 1rem;
+    padding-right: 16px;
+    text-align: left;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    object-fit: cover;
+}
+
+/* Formulario - Mobile First */
+.form-container {
+    padding: 25px;
+}
+
+.btn-dark {
+    background: var(--naranja);
+    border: none;
+    padding: 12px;
+    font-size: 1.5rem;
+    color: var(--morado1);
+    font-weight: 700;
+}
+
+.btn-dark:hover {
+    opacity: 0.9;
+    background-color: var(--naranja-oscuro);
+    color: var(--morado1);
+}
+
+.form-control:focus {
+    border-color: var(--morado2);
+    box-shadow: 0 0 0 0.2rem rgba(64, 37, 99, 0.2);
+}
+
+/* ========== TABLET (834px en adelante) ========== */
+@media (min-width: 834px) {
+    .cabecera-overlay {
+        padding: 20px 20px;
+    }
+
+    .navbar {
+        padding-top: 45px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        border-style: solid;
+        border-color: rgba(230, 226, 216, 0.3);
+        border-radius: 4px;
+        padding: 8px;
+    }
+
+    .menu-flotante {
+        display: none !important;
+    }
+
+    /* Casos - Tablet: 2 columnas */
+    .casos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    /* Cards - Tablet */
+    .cards-section {
+        padding: 20px 20px;
+    }
+
+    .custom-card {
+        margin-bottom: 0;
+    }
+
+    .custom-card h3 {
+        font-size: 1.125rem;
+    }
+
+    .custom-card p {
+        font-size: 1rem;
+    }
+
+    /* Experiencia - Tablet: 2 columnas */
+    .experiencia {
+        padding: 40px 100px;
+    }
+
+    .experiencias-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .cada_experiencia {
+        margin-bottom: 0;
+    }
+
+    /* Contacto - Tablet */
+    .contact {
+        padding: 40px 30px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .contact-left {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .form-container {
+        flex: 1;
+    }
+
+    .profile {
+        flex-direction: row;
+        text-align: left;
+        gap: 20px;
+    }
+}
+
+/* ========== DESKTOP (1024px en adelante) ========== */
+@media (min-width: 1024px) {
+    .nav-links a {
+        font-size: 1.125rem;
+        border-style: solid;
+        border-color: rgba(230, 226, 216, 0.3);
+        border-radius: 4px;
+        padding: 8px;
+    }
+
+    .cards-section {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    /* Casos - Desktop: 3 columnas */
+    .casos {
+        padding: 60px 100px;
+    }
+
+    .casos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Experiencia - Desktop: 3 columnas */
+    .experiencia {
+        padding: 60px 100px;
+    }
+
+    .experiencias-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .custom-card {
+        transition: transform 0.3s ease;
+    }
+
+    .custom-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .custom-card p {
+        font-size: 1rem;
+    }
+
+    .contact {
+        padding: 60px;
+        margin: 0 auto;
+    }
+}
+
+/* ========== DESKTOP GRANDE (1440px en adelante) ========== */
+@media (min-width: 1440px) {
+    .cards-section {
+        max-width: 1440px;
+    }
+
+    .custom-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .custom-card p {
+        font-size: 1rem;
+    }
+}
